@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="share, acknowledge" />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="积水成渊" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="TypeScript与JavaScript的区别在哪里？1234TypeScript是ES6的超集。至于需不需要使用，在于你所需要的场景。比如在Angular2中，用TypeScript明显好于ES6。-- 某网友TypeScript的开发者c#之父，所以这个TypeScript的很多语言特性是从c#中移过来的。TypeScript大概是ES7的实现，所以从语法角度来讲，是具有很大优势。TypeS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于前端的一些知识">
+<meta property="og:url" content="http://coderxiaode.com/2017/02/21/关于前端的一些知识/index.html">
+<meta property="og:site_name" content="积水成渊">
+<meta property="og:description" content="TypeScript与JavaScript的区别在哪里？1234TypeScript是ES6的超集。至于需不需要使用，在于你所需要的场景。比如在Angular2中，用TypeScript明显好于ES6。-- 某网友TypeScript的开发者c#之父，所以这个TypeScript的很多语言特性是从c#中移过来的。TypeScript大概是ES7的实现，所以从语法角度来讲，是具有很大优势。TypeS">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-02-21T14:37:32.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="关于前端的一些知识">
+<meta name="twitter:description" content="TypeScript与JavaScript的区别在哪里？1234TypeScript是ES6的超集。至于需不需要使用，在于你所需要的场景。比如在Angular2中，用TypeScript明显好于ES6。-- 某网友TypeScript的开发者c#之父，所以这个TypeScript的很多语言特性是从c#中移过来的。TypeScript大概是ES7的实现，所以从语法角度来讲，是具有很大优势。TypeS">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"always","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '9467035',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://coderxiaode.com/2017/02/21/关于前端的一些知识/"/>
+
+
+
+
+
+  <title>关于前端的一些知识 | 积水成渊</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">积水成渊</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">xiaode的博客</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://coderxiaode.com/2017/02/21/关于前端的一些知识/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xiaode">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="积水成渊">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">关于前端的一些知识</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-21T22:06:42+08:00">
+                2017-02-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="TypeScript与JavaScript的区别在哪里？"><a href="#TypeScript与JavaScript的区别在哪里？" class="headerlink" title="TypeScript与JavaScript的区别在哪里？"></a>TypeScript与JavaScript的区别在哪里？</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">TypeScript是ES6的超集。至于需不需要使用，在于你所需要的场景。比如在Angular2中，用TypeScript明显好于ES6。</div><div class="line">-- 某网友</div><div class="line"></div><div class="line">TypeScript的开发者c#之父，所以这个TypeScript的很多语言特性是从c#中移过来的。TypeScript大概是ES7的实现，所以从语法角度来讲，是具有很大优势。TypeScript可选择编译成ES5或ES3，ts文件编译成js文件，并且ts文件可直接在浏览器中调试。TypeScript还有一大优势是配合宇宙最强编译器VS,开发效率非常高。唯一的不足只是用TypeScript开发的人太少。</div></pre></td></tr></table></figure>
+<h1 id="什么是ECMA？"><a href="#什么是ECMA？" class="headerlink" title="什么是ECMA？"></a>什么是ECMA？</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">ECMAScript 6.0（以下简称ES6）是JavaScript语言的下一代标准，已经在2015年6月正式发布了。它的目标，是使得JavaScript语言可以用来编写复杂的大型应用程序，成为企业级开发语言。</div><div class="line">--阮一峰</div></pre></td></tr></table></figure>
+<h1 id="ECMAScript和JavaScript的关系？"><a href="#ECMAScript和JavaScript的关系？" class="headerlink" title="ECMAScript和JavaScript的关系？"></a>ECMAScript和JavaScript的关系？</h1><p>由于JavaScript的创造者Netscae公司的版权问题吧，ECMAScript不能叫Javascript。总之，ECMAScript和JavaScript的关系是，前者是后者的规格，后者是前者的一种实现（另外的ECMAScript方言还有Jscript和ActionScript）。</p>
+<h1 id="angularJS和第一问中两者的关系是什么？"><a href="#angularJS和第一问中两者的关系是什么？" class="headerlink" title="angularJS和第一问中两者的关系是什么？"></a>angularJS和第一问中两者的关系是什么？</h1><p><strong>AngularJS是一款优秀的前端JS框架</strong><br>AngularJS2是基于typescript来开发的。</p>
+<p>在2014年底，Google宣布Angular 2将会对AngularJS进行完全地重写，他们甚至还创建了一门新的语言，名为“AtScript”，他们本来希望使用这门语言来编写Angular 2应用。</p>
+<p>但是，随后Microsoft同意在它们的TypeScript语言（JavaScript的一个严格超集）上添加对装饰符（decorator）的支持，所以，它就成为了开发Angular 2框架本身所使用的语言，并且还是使用AngularJS框架开发应用的推荐语言。</p>
+<p>另外，我们还可以使用JavaScript（ECMAScript 5和6均可）和Dart来编写Angular 2应用。</p>
+<p>除此之外，Angular团队还集成了Microsoft的另外一个产品到Angular 2框架之中，这就是反应型JavaScript扩展（reactive JavaScript extension）的RxJS库。</p>
+<p>Angular 2并不是一个MVC框架，而是基于组件（component）的框架。在Angular 2中，应用是松耦合组件所组成的树。</p>
+<h1 id="JS的特性有哪些？"><a href="#JS的特性有哪些？" class="headerlink" title="JS的特性有哪些？"></a>JS的特性有哪些？</h1>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/01/08/嗯，第二个本命年的所想/" rel="next" title="嗯，第二个本命年的所想">
+                <i class="fa fa-chevron-left"></i> 嗯，第二个本命年的所想
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/03/23/Ionic的一些用法/" rel="prev" title="Ionic的一些用法">
+                Ionic的一些用法 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/avatar.jpeg"
+               alt="xiaode" />
+          <p class="site-author-name" itemprop="name">xiaode</p>
+           
+              <p class="site-description motion-element" itemprop="description">天堂有路你不走，学海无涯苦作舟</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">18</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">16</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#TypeScript与JavaScript的区别在哪里？"><span class="nav-number">1.</span> <span class="nav-text">TypeScript与JavaScript的区别在哪里？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是ECMA？"><span class="nav-number">2.</span> <span class="nav-text">什么是ECMA？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ECMAScript和JavaScript的关系？"><span class="nav-number">3.</span> <span class="nav-text">ECMAScript和JavaScript的关系？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#angularJS和第一问中两者的关系是什么？"><span class="nav-number">4.</span> <span class="nav-text">angularJS和第一问中两者的关系是什么？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#JS的特性有哪些？"><span class="nav-number">5.</span> <span class="nav-text">JS的特性有哪些？</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">xiaode</span>
+</div>
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
