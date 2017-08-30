@@ -105,13 +105,13 @@
 <meta property="og:site_name" content="积水成渊">
 <meta property="og:description" content="#使用ionic框架开发hybrid应用 什么是ionic？ Start building high-quality mobile apps with the tech you know and love.  根据官方的介绍结合本人的理解，ionic是cordova(phoneGap)加上一套移动端适配的样式和开发套件。 每个手机就像电脑一样，都带着自己的操作系统。如果你愿意，你可以从头写一个浏览">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://coderxiaode.com/2017/03/23/Ionic的一些用法/images/cordova.png">
-<meta property="og:image" content="http://coderxiaode.com/2017/03/23/Ionic的一些用法/images/adb.jpg">
-<meta property="og:updated_time" content="2017-03-23T03:59:55.000Z">
+<meta property="og:image" content="http://7xlkqd.com1.z0.glb.clouddn.com/cordova.png">
+<meta property="og:image" content="http://7xlkqd.com1.z0.glb.clouddn.com/adb.jpg">
+<meta property="og:updated_time" content="2017-08-30T14:17:56.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ionic的一些用法">
 <meta name="twitter:description" content="#使用ionic框架开发hybrid应用 什么是ionic？ Start building high-quality mobile apps with the tech you know and love.  根据官方的介绍结合本人的理解，ionic是cordova(phoneGap)加上一套移动端适配的样式和开发套件。 每个手机就像电脑一样，都带着自己的操作系统。如果你愿意，你可以从头写一个浏览">
-<meta name="twitter:image" content="http://coderxiaode.com/2017/03/23/Ionic的一些用法/images/cordova.png">
+<meta name="twitter:image" content="http://7xlkqd.com1.z0.glb.clouddn.com/cordova.png">
 
 
 
@@ -397,7 +397,7 @@
 <li><a href="http://cordova.apache.org/" target="_blank" rel="external">Apache Cordava</a></li>
 <li><a href="http://phonegap.com/" target="_blank" rel="external">PhoneGap</a></li>
 </ul>
-<p><img src="images/cordova.png" alt="Cordova 框架图"></p>
+<p><img src="http://7xlkqd.com1.z0.glb.clouddn.com/cordova.png" alt="Cordova 框架图"></p>
 <h2 id="为什么要使用ionic？"><a href="#为什么要使用ionic？" class="headerlink" title="为什么要使用ionic？"></a>为什么要使用ionic？</h2><p>为了web程序员可以抢移动端程序猿的饭碗。。。开个玩笑<br>为了更敏捷！！！ <em>write once run everywhere</em>！<br>原来的移动客户端开发—周期长，适配麻烦。为了覆盖iOS和android两个平台，不得不招两波程序员整天在公司互相鄙视，UI和产品要根据两种平台不同的设计语言来设计两套交互和原型，浪费人力物力。(<strong>扁平化</strong>  or <strong>Material</strong>)</p>
 <h2 id="关于移动端开发环境的搭建"><a href="#关于移动端开发环境的搭建" class="headerlink" title="关于移动端开发环境的搭建"></a>关于移动端开发环境的搭建</h2><h3 id="0"><a href="#0" class="headerlink" title="0"></a>0</h3><p>比较关键的几个组件：</p>
 <ul>
@@ -406,22 +406,27 @@
 <li>Node.js</li>
 <li>Ionic, Cordova</li>
 </ul>
-<h3 id="Android"><a href="#Android" class="headerlink" title="Android"></a>Android</h3><p>首先看一下官方教程：</p>
+<h3 id="Android"><a href="#Android" class="headerlink" title="Android"></a>Android</h3><p>首先看一下官方教程,主要是一些环境变量配置：</p>
 <ul>
-<li><a href="https://cordova.apache.org/docs/en/6.x/guide/platforms/android/" target="_blank" rel="external">Cordova官方配置教程</a><br>主要是一些环境变量配置。</li>
+<li><a href="https://cordova.apache.org/docs/en/6.x/guide/platforms/android/" target="_blank" rel="external">Cordova官方配置教程</a></li>
 </ul>
 <p>然后是IDE，首选的IDE当然是Google的AS</p>
 <ul>
-<li><a href="https://developer.android.com/studio/intro/index.html" target="_blank" rel="external">Android Studio</a><br>配置完毕后可以使用adb命令检查android SDK路径是否配置正确<br><img src="images/adb.jpg" alt="举个栗子"><br>因为身在墙内，各位同学在更新SDK时肯定会遇到各种问题，可参考以下解决方案：</li>
+<li><a href="https://developer.android.com/studio/intro/index.html" target="_blank" rel="external">Android Studio</a></li>
+</ul>
+<p>配置完毕后可以使用adb命令检查android SDK路径是否配置正确</p>
+<p><img src="http://7xlkqd.com1.z0.glb.clouddn.com/adb.jpg" alt="举个栗子"></p>
+<p>因为身在墙内，各位同学在更新SDK时肯定会遇到各种问题，可参考以下解决方案：</p>
+<ul>
 <li><a href="http://www.androiddevtools.cn/" target="_blank" rel="external">安卓开发者</a></li>
 </ul>
-<h4 id="如何打包？"><a href="#如何打包？" class="headerlink" title="如何打包？"></a>如何打包？</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> Android</div><div class="line">ionic run android --prod --release</div><div class="line"><span class="meta">#</span> or</div><div class="line">ionic build android --prod --release</div></pre></td></tr></table></figure>
-<h3 id="iOS"><a href="#iOS" class="headerlink" title="iOS"></a>iOS</h3><ul>
-<li><a href="https://cordova.apache.org/docs/en/6.x/guide/platforms/ios/" target="_blank" rel="external">Cordova官方配置教程</a><br>苹果配置相对Android比较简单，相对麻烦的是开发者者账号和签名，我们可以使用自己的私有账号给应用签名发布在自己的手机上进行调适。</li>
-</ul>
+<h4 id="如何打包"><a href="#如何打包" class="headerlink" title="如何打包"></a>如何打包</h4><p>当然可以直接使用内置脚手架工具来打包啦：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> Android</div><div class="line">ionic run android --prod --release</div><div class="line"><span class="meta">#</span> or</div><div class="line">ionic build android --prod --release</div></pre></td></tr></table></figure>
+<h3 id="iOS"><a href="#iOS" class="headerlink" title="iOS"></a>iOS</h3><p>苹果配置相对Android比较简单，相对麻烦的是开发者者账号和签名，我们可以使用自己的私有账号给应用签名发布在自己的手机上进行调适。</p>
+<p><a href="https://cordova.apache.org/docs/en/6.x/guide/platforms/ios/" target="_blank" rel="external">Cordova官方配置教程</a></p>
 <p>####如何打包？<br><a href="https://ionicframework.com/docs/v2/intro/deploying/" target="_blank" rel="external">iOS打包发布</a> </p>
 <h2 id="如何调适？"><a href="#如何调适？" class="headerlink" title="如何调适？"></a>如何调适？</h2><p><a href="http://jetgeng.github.io/ionic-xiang-mu-de-diao-shi.html" target="_blank" rel="external">如何调适？</a></p>
-<p>个人推荐</p>
+<p>以下为个人推荐:</p>
 <h3 id="Android-1"><a href="#Android-1" class="headerlink" title="Android"></a>Android</h3><p>使用Chrome的inspect工具</p>
 <h3 id="iPhone"><a href="#iPhone" class="headerlink" title="iPhone"></a>iPhone</h3><p>建议使用Mac Xcode的iPhone模拟器来调适</p>
 
@@ -545,7 +550,7 @@
             
               <a href="/archives/">
             
-                <span class="site-state-item-count">19</span>
+                <span class="site-state-item-count">20</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -567,7 +572,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">17</span>
+                <span class="site-state-item-count">18</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -633,7 +638,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是ionic？"><span class="nav-number">1.</span> <span class="nav-text">什么是ionic？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是cordova-PhoneGap"><span class="nav-number">1.1.</span> <span class="nav-text">什么是cordova(PhoneGap)?</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么要使用ionic？"><span class="nav-number">2.</span> <span class="nav-text">为什么要使用ionic？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于移动端开发环境的搭建"><span class="nav-number">3.</span> <span class="nav-text">关于移动端开发环境的搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#0"><span class="nav-number">3.1.</span> <span class="nav-text">0</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Android"><span class="nav-number">3.2.</span> <span class="nav-text">Android</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#如何打包？"><span class="nav-number">3.2.1.</span> <span class="nav-text">如何打包？</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#iOS"><span class="nav-number">3.3.</span> <span class="nav-text">iOS</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何调适？"><span class="nav-number">4.</span> <span class="nav-text">如何调适？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Android-1"><span class="nav-number">4.1.</span> <span class="nav-text">Android</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#iPhone"><span class="nav-number">4.2.</span> <span class="nav-text">iPhone</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是ionic？"><span class="nav-number">1.</span> <span class="nav-text">什么是ionic？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是cordova-PhoneGap"><span class="nav-number">1.1.</span> <span class="nav-text">什么是cordova(PhoneGap)?</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么要使用ionic？"><span class="nav-number">2.</span> <span class="nav-text">为什么要使用ionic？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于移动端开发环境的搭建"><span class="nav-number">3.</span> <span class="nav-text">关于移动端开发环境的搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#0"><span class="nav-number">3.1.</span> <span class="nav-text">0</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Android"><span class="nav-number">3.2.</span> <span class="nav-text">Android</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#如何打包"><span class="nav-number">3.2.1.</span> <span class="nav-text">如何打包</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#iOS"><span class="nav-number">3.3.</span> <span class="nav-text">iOS</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何调适？"><span class="nav-number">4.</span> <span class="nav-text">如何调适？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Android-1"><span class="nav-number">4.1.</span> <span class="nav-text">Android</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#iPhone"><span class="nav-number">4.2.</span> <span class="nav-text">iPhone</span></a></li></ol></li></ol></div>
             
 
           </div>
