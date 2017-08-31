@@ -97,18 +97,18 @@
 
 
 
-<meta name="description" content="Recently I have been assigned to build some online services for my Lab such as offical wiki, code repository and so on. I have a physical server machine with pretty good configuration and I want to bu">
+<meta name="description" content="Recently I have been assigned to build some online services for my Lab such as official wiki, code repository, Piazza… I have physical server machine inmy hand with pretty good hardwares and I want to">
 <meta name="keywords" content="Docker">
 <meta property="og:type" content="article">
-<meta property="og:title" content="How Did I Build Docker Services for Lab">
+<meta property="og:title" content="How Did I Build Docker Services for My Lab">
 <meta property="og:url" content="http://coderxiaode.com/2017/08/26/Lab/index.html">
 <meta property="og:site_name" content="积水成渊">
-<meta property="og:description" content="Recently I have been assigned to build some online services for my Lab such as offical wiki, code repository and so on. I have a physical server machine with pretty good configuration and I want to bu">
+<meta property="og:description" content="Recently I have been assigned to build some online services for my Lab such as official wiki, code repository, Piazza… I have physical server machine inmy hand with pretty good hardwares and I want to">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-26T11:03:49.000Z">
+<meta property="og:updated_time" content="2017-08-31T01:56:14.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="How Did I Build Docker Services for Lab">
-<meta name="twitter:description" content="Recently I have been assigned to build some online services for my Lab such as offical wiki, code repository and so on. I have a physical server machine with pretty good configuration and I want to bu">
+<meta name="twitter:title" content="How Did I Build Docker Services for My Lab">
+<meta name="twitter:description" content="Recently I have been assigned to build some online services for my Lab such as official wiki, code repository, Piazza… I have physical server machine inmy hand with pretty good hardwares and I want to">
 
 
 
@@ -144,7 +144,7 @@
 
 
 
-  <title>How Did I Build Docker Services for Lab | 积水成渊</title>
+  <title>How Did I Build Docker Services for My Lab | 积水成渊</title>
   
 
 
@@ -308,7 +308,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">How Did I Build Docker Services for Lab</h1>
+          <h1 class="post-title" itemprop="name headline">How Did I Build Docker Services for My Lab</h1>
         
 
         <div class="post-meta">
@@ -380,8 +380,16 @@
       
 
       
-        <p>Recently I have been assigned to build some online services for my Lab such as offical wiki, code repository and so on. I have a physical server machine with pretty good configuration and I want to build and configure these services on the bare machine at first. But the configurations for each service really bother me and I decide to establish the whole services in another way – Docker.</p>
-
+        <p>Recently I have been assigned to build some online services for my Lab such as official wiki, code repository, Piazza… I have physical server machine inmy hand with pretty good hardwares and I want to build and configure these services on the bare machine at first. But the configurations for each service really annoy me and I decide to establish the whole services in another way – <strong>Docker</strong>.</p>
+<p>My OS info is as listed below:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">sdic@SDIC:~$ uname -a</div><div class="line">Linux SDIC 4.4.0-21-generic #37-Ubuntu SMP Mon Apr 18 18:33:37 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux</div><div class="line">sdic@SDIC:~$ sudo lsb_release -a</div><div class="line">No LSB modules are available.</div><div class="line">Distributor ID:	Ubuntu</div><div class="line">Description:	Ubuntu Artful Aardvark (development branch)</div><div class="line">Release:	17.10</div><div class="line">Codename:	artful</div></pre></td></tr></table></figure>
+<p>It is said:</p>
+<blockquote>
+<p>Docker - Build, Ship, and Run Any App, Anywhere</p>
+</blockquote>
+<p>So I make a list, and build these services step by step.</p>
+<h2 id="step-0"><a href="#step-0" class="headerlink" title="step 0"></a>step 0</h2><p>Of course the first step must be installing the docker in physical machine. I follow the <a href="https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/" target="_blank" rel="external">official guides</a>. However, my networking state seems to be not as good as others(F**K GFW), and it comes up with some problems when I use the docker official repository. After adding the official GPG key, I get  <code>404</code> connect error after I run <code>apt update</code>, and I have no idea how to deal with it. So I turn to <a href="https://zouyapeng.gitbooks.io/docker/content/DockerInstallation/ubuntu_16_04.html" target="_blank" rel="external">other solution</a> and get the docker installed on my machine.</p>
+<h2 id="step-1"><a href="#step-1" class="headerlink" title="step 1"></a>step 1</h2><h2 id="step-2"><a href="#step-2" class="headerlink" title="step 2"></a>step 2</h2><h2 id="setp-3"><a href="#setp-3" class="headerlink" title="setp 3"></a>setp 3</h2>
       
     </div>
     
@@ -475,8 +483,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar.jpeg"
@@ -571,6 +588,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#step-0"><span class="nav-number">1.</span> <span class="nav-text">step 0</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#step-1"><span class="nav-number">2.</span> <span class="nav-text">step 1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#step-2"><span class="nav-number">3.</span> <span class="nav-text">step 2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#setp-3"><span class="nav-number">4.</span> <span class="nav-text">setp 3</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
