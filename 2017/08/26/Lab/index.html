@@ -105,7 +105,7 @@
 <meta property="og:site_name" content="积水成渊">
 <meta property="og:description" content="Recently I have been assigned to build some online services for my Lab such as official wiki, code repository, Piazza… I have physical server machine inmy hand with pretty good hardwares and I want to">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-31T01:56:14.000Z">
+<meta property="og:updated_time" content="2017-09-13T11:54:01.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="How Did I Build Docker Services for My Lab">
 <meta name="twitter:description" content="Recently I have been assigned to build some online services for my Lab such as official wiki, code repository, Piazza… I have physical server machine inmy hand with pretty good hardwares and I want to">
@@ -320,7 +320,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-26T18:53:50+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-26T18:53:50-07:00">
                 2017-08-26
               </time>
             
@@ -389,7 +389,35 @@
 </blockquote>
 <p>So I make a list, and build these services step by step.</p>
 <h2 id="step-0"><a href="#step-0" class="headerlink" title="step 0"></a>step 0</h2><p>Of course the first step must be installing the docker in physical machine. I follow the <a href="https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/" target="_blank" rel="external">official guides</a>. However, my networking state seems to be not as good as others(F**K GFW), and it comes up with some problems when I use the docker official repository. After adding the official GPG key, I get  <code>404</code> connect error after I run <code>apt update</code>, and I have no idea how to deal with it. So I turn to <a href="https://zouyapeng.gitbooks.io/docker/content/DockerInstallation/ubuntu_16_04.html" target="_blank" rel="external">other solution</a> and get the docker installed on my machine.</p>
-<h2 id="step-1"><a href="#step-1" class="headerlink" title="step 1"></a>step 1</h2><h2 id="step-2"><a href="#step-2" class="headerlink" title="step 2"></a>step 2</h2><h2 id="setp-3"><a href="#setp-3" class="headerlink" title="setp 3"></a>setp 3</h2>
+<h2 id="step-1"><a href="#step-1" class="headerlink" title="step 1"></a>step 1</h2><p><strong>Requirement Analysis</strong>: The total requirements are as followed:</p>
+<blockquote>
+<ol>
+<li>A website for Lab basic info, like Wiki</li>
+<li>A code repository for team collaboration</li>
+<li>A forum for students who enroll the courses provided by our Lab  (Piazza).</li>
+<li>A tool for managing the services’ lifetime, resource, version, backups and so on.</li>
+</ol>
+</blockquote>
+<p>So I explore the <a href="https://hub.docker.com/" target="_blank" rel="external">docker hub</a> to look for services matched my need. Through carefully comparing, I get another list:</p>
+<blockquote>
+<ul>
+<li>Website – <a href="https://hub.docker.com/r/istepanov/dokuwiki/" target="_blank" rel="external">Dokuwiki</a> </li>
+<li>Code repository – <a href="https://hub.docker.com/r/sameersbn/gitlab/" target="_blank" rel="external">GitLab</a></li>
+<li>Forum – <a href="https://hub.docker.com/r/skyzhou/docker-discuz/" target="_blank" rel="external">Dizcuss</a></li>
+<li>Management tool –<a href="https://shipyard-project.com/" target="_blank" rel="external">Shipyard</a> </li>
+</ul>
+</blockquote>
+<h2 id="step-2"><a href="#step-2" class="headerlink" title="step 2"></a>step 2</h2><p>Decided which services to install, here comes another question: <strong>How to manage my docker cluster</strong>? This question indicates numbers of aspects in operation and maintenance.</p>
+<h3 id="Backup-amp-Recovery"><a href="#Backup-amp-Recovery" class="headerlink" title="Backup &amp; Recovery"></a>Backup &amp; Recovery</h3><p>As we know, the docker images run as instances on the machine, each image has its own version. When we want to update the image, how do we deal with the data in the instances? If we just force updating the image and restart the container, all data will be erased. At this point, we need to further understand the docker. Based on my konwledge, the running instance owns a special directory called <code>data volume</code>. It can bypass UFS and </p>
+<ul>
+<li>shared among the containers</li>
+<li>mofified immediately</li>
+<li>isolated from the image</li>
+<li>persisted even the container being deleted  </li>
+</ul>
+<p>According to the function of data volume, we can easily create or mount the volume to the container</p>
+<h3 id="Start-amp-Stop"><a href="#Start-amp-Stop" class="headerlink" title="Start &amp; Stop"></a>Start &amp; Stop</h3><h3 id="Monitoring-amp-Logging"><a href="#Monitoring-amp-Logging" class="headerlink" title="Monitoring &amp; Logging"></a>Monitoring &amp; Logging</h3><h2 id="setp-3"><a href="#setp-3" class="headerlink" title="setp 3"></a>setp 3</h2><p>Install these services on the machine and configure them. That is least important part, cuz I just refer to the official guidence and follow some advices from the commentary. I still post them out for convenience.</p>
+<h3 id="DokuWiki"><a href="#DokuWiki" class="headerlink" title="DokuWiki"></a>DokuWiki</h3><h3 id="GitLab"><a href="#GitLab" class="headerlink" title="GitLab"></a>GitLab</h3><h3 id="Forum"><a href="#Forum" class="headerlink" title="Forum"></a>Forum</h3>
       
     </div>
     
@@ -598,7 +626,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#step-0"><span class="nav-number">1.</span> <span class="nav-text">step 0</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#step-1"><span class="nav-number">2.</span> <span class="nav-text">step 1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#step-2"><span class="nav-number">3.</span> <span class="nav-text">step 2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#setp-3"><span class="nav-number">4.</span> <span class="nav-text">setp 3</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#step-0"><span class="nav-number">1.</span> <span class="nav-text">step 0</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#step-1"><span class="nav-number">2.</span> <span class="nav-text">step 1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#step-2"><span class="nav-number">3.</span> <span class="nav-text">step 2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Backup-amp-Recovery"><span class="nav-number">3.1.</span> <span class="nav-text">Backup & Recovery</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Start-amp-Stop"><span class="nav-number">3.2.</span> <span class="nav-text">Start & Stop</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Monitoring-amp-Logging"><span class="nav-number">3.3.</span> <span class="nav-text">Monitoring & Logging</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#setp-3"><span class="nav-number">4.</span> <span class="nav-text">setp 3</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#DokuWiki"><span class="nav-number">4.1.</span> <span class="nav-text">DokuWiki</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GitLab"><span class="nav-number">4.2.</span> <span class="nav-text">GitLab</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Forum"><span class="nav-number">4.3.</span> <span class="nav-text">Forum</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -621,7 +649,7 @@
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-"></i>
   </span>
