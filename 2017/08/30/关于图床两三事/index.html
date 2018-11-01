@@ -2,15 +2,27 @@
 
 
 
+
+
+
+
+
+
+
+
+
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next mist use-motion" lang="default">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
 <meta name="theme-color" content="#222">
+
+
+
 
 
 
@@ -38,36 +50,6 @@
 
 
 
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
 
 
 
@@ -76,39 +58,25 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=6.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="图床," />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.5.0">
 
 
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.5.0">
 
 
-
-  <link rel="alternate" href="/atom.xml" title="积水成渊" type="application/atom+xml" />
-
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.5.0">
 
 
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+  <link rel="mask-icon" href="/images/logo.svg?v=6.5.0" color="#222">
 
 
 
 
 
 
-<meta name="description" content="经常写博客遇到插入图片的需求，以前因为 懒 直接塞到到了相对路径下的资源文件里，后来用了一段时间的七牛云对象存储做图床，嫌弃上传文件再导出链接实在太麻烦就放弃了，回归了塞资源文件的老路数。今天偶然看到了推送关于解决图床问题的方法，懒如我也兴起试试。 原文链接在此 总结一下基本方法有 123公共图床: 微博，Imgur，SM.MS(很奇怪的名字)自建图床(云服务): 七牛云，又拍云，阿里云OSS自建">
-<meta name="keywords" content="图床">
-<meta property="og:type" content="article">
-<meta property="og:title" content="关于图床两三事">
-<meta property="og:url" content="http://leonardli.github.io/2017/08/30/关于图床两三事/index.html">
-<meta property="og:site_name" content="积水成渊">
-<meta property="og:description" content="经常写博客遇到插入图片的需求，以前因为 懒 直接塞到到了相对路径下的资源文件里，后来用了一段时间的七牛云对象存储做图床，嫌弃上传文件再导出链接实在太麻烦就放弃了，回归了塞资源文件的老路数。今天偶然看到了推送关于解决图床问题的方法，懒如我也兴起试试。 原文链接在此 总结一下基本方法有 123公共图床: 微博，Imgur，SM.MS(很奇怪的名字)自建图床(云服务): 七牛云，又拍云，阿里云OSS自建">
-<meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-30T14:27:41.000Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="关于图床两三事">
-<meta name="twitter:description" content="经常写博客遇到插入图片的需求，以前因为 懒 直接塞到到了相对路径下的资源文件里，后来用了一段时间的七牛云对象存储做图床，嫌弃上传文件再导出链接实在太麻烦就放弃了，回归了塞资源文件的老路数。今天偶然看到了推送关于解决图床问题的方法，懒如我也兴起试试。 原文链接在此 总结一下基本方法有 123公共图床: 微博，Imgur，SM.MS(很奇怪的名字)自建图床(云服务): 七牛云，又拍云，阿里云OSS自建">
 
 
 
@@ -116,16 +84,14 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
-    version: '5.1.2',
-    sidebar: {"position":"left","display":"always","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
+    scheme: 'Mist',
+    version: '6.5.0',
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
     tabs: true,
-    motion: true,
-    duoshuo: {
-      userId: '9467035',
-      author: '博主'
-    },
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -137,12 +103,43 @@
 </script>
 
 
+  
+
+
+
+
+  <meta name="description" content="update 11/1/2018肉翻到美帝后直接更换到了imgur.emmmm, 真香以下是测试： 从注册到使用仅仅用时30s, 每张图片甚至提供生成的各种link, 用户体验极佳.   经常写博客遇到插入图片的需求，以前因为 懒 直接塞到到了相对路径下的资源文件里，后来用了一段时间的七牛云对象存储做图床，嫌弃上传文件再导出链接实在太麻烦就放弃了，回归了塞资源文件的老路数。今天偶然看到了推送关于解">
+<meta name="keywords" content="图床">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于图床两三事">
+<meta property="og:url" content="http://leonardli.github.io/2017/08/30/关于图床两三事/index.html">
+<meta property="og:site_name" content="积水成渊">
+<meta property="og:description" content="update 11/1/2018肉翻到美帝后直接更换到了imgur.emmmm, 真香以下是测试： 从注册到使用仅仅用时30s, 每张图片甚至提供生成的各种link, 用户体验极佳.   经常写博客遇到插入图片的需求，以前因为 懒 直接塞到到了相对路径下的资源文件里，后来用了一段时间的七牛云对象存储做图床，嫌弃上传文件再导出链接实在太麻烦就放弃了，回归了塞资源文件的老路数。今天偶然看到了推送关于解">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://i.imgur.com/cSOzrLR.jpg">
+<meta property="og:image" content="https://i.imgur.com/OTe8TiM.jpg">
+<meta property="og:updated_time" content="2018-11-01T18:24:41.417Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="关于图床两三事">
+<meta name="twitter:description" content="update 11/1/2018肉翻到美帝后直接更换到了imgur.emmmm, 真香以下是测试： 从注册到使用仅仅用时30s, 每张图片甚至提供生成的各种link, 用户体验极佳.   经常写博客遇到插入图片的需求，以前因为 懒 直接塞到到了相对路径下的资源文件里，后来用了一段时间的七牛云对象存储做图床，嫌弃上传文件再导出链接实在太麻烦就放弃了，回归了塞资源文件的老路数。今天偶然看到了推送关于解">
+<meta name="twitter:image" content="https://i.imgur.com/cSOzrLR.jpg">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="积水成渊" type="application/atom+xml" />
+
+
+
 
   <link rel="canonical" href="http://leonardli.github.io/2017/08/30/关于图床两三事/"/>
 
 
 
-
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
 
   <title>关于图床两三事 | 积水成渊</title>
   
@@ -154,9 +151,39 @@
 
 
 
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
 
   
   
@@ -172,19 +199,21 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">积水成渊</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+    
       
         <p class="site-subtitle">xiaode的博客</p>
       
+    
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="Toggle navigation bar">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -192,75 +221,69 @@
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
+  </li>
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-sitemap">
-          <a href="/sitemap.xml" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
-            
-            站点地图
-          </a>
-        </li>
-      
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />About</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />Tags<span class="badge">18</span></a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />Categories<span class="badge">7</span></a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives<span class="badge">21</span></a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-sitemap">
+    <a href="/sitemap.xml" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />Sitemap</a>
+  </li>
 
       
+      
     </ul>
+  
+
+  
+    
+
   
 
   
@@ -268,12 +291,20 @@
 
 
 
- </div>
+  
+
+
+
+</div>
     </header>
+
+    
+
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
           <div id="content" class="content">
             
 
@@ -286,6 +317,8 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
@@ -295,7 +328,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xiaode">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="天堂有路你不走，学海无涯苦作舟">
       <meta itemprop="image" content="/uploads/avatar.jpeg">
     </span>
 
@@ -308,25 +341,50 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">关于图床两三事</h1>
+          <h1 class="post-title" itemprop="name headline">关于图床两三事
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-30T21:36:03-07:00">
-                2017-08-30
-              </time>
+
+              
+                
+              
+
+              <time title="Created: 2017-08-30 21:36:03" itemprop="dateCreated datePublished" datetime="2017-08-30T21:36:03-07:00">2017-08-30</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-11-01 11:24:41" itemprop="dateModified" datetime="2018-11-01T11:24:41-07:00">2018-11-01</time>
+              
             
           </span>
 
@@ -339,14 +397,10 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/经验/" itemprop="url" rel="index">
-                    <span itemprop="name">经验</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/经验/" itemprop="url" rel="index"><span itemprop="name">经验</span></a></span>
 
                 
                 
@@ -380,7 +434,11 @@
       
 
       
-        <p>经常写博客遇到插入图片的需求，以前因为 <strong>懒</strong> 直接塞到到了<code>相对路径下的资源文件</code>里，后来用了一段时间的<code>七牛云</code>对象存储做图床，嫌弃上传文件再导出链接实在太麻烦就放弃了，回归了塞资源文件的老路数。今天偶然看到了推送关于解决图床问题的方法，懒如我也兴起试试。</p>
+        <p><strong>update 11/1/2018</strong><br>肉翻到美帝后直接更换到了<a href="https://imgur.com/" target="_blank" rel="external">imgur</a>.<br>emmmm, 真香<br>以下是测试：<br><img src="https://i.imgur.com/cSOzrLR.jpg" alt="Imgur"></p>
+<p>从注册到使用仅仅用时30s, 每张图片甚至提供生成的各种link, 用户体验极佳.</p>
+<p><img src="https://i.imgur.com/OTe8TiM.jpg" alt="Imgur"></p>
+<hr>
+<p>经常写博客遇到插入图片的需求，以前因为 <strong>懒</strong> 直接塞到到了<code>相对路径下的资源文件</code>里，后来用了一段时间的<code>七牛云</code>对象存储做图床，嫌弃上传文件再导出链接实在太麻烦就放弃了，回归了塞资源文件的老路数。今天偶然看到了推送关于解决图床问题的方法，懒如我也兴起试试。</p>
 <p><a href="https://sspai.com/post/40499" target="_blank" rel="external">原文链接在此</a></p>
 <p>总结一下基本方法有</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">公共图床: 微博，Imgur，SM.MS(很奇怪的名字)</div><div class="line">自建图床(云服务): 七牛云，又拍云，阿里云OSS</div><div class="line">自建图床(开源方案): Lychee，树洞外链</div></pre></td></tr></table></figure>
@@ -388,6 +446,9 @@
 
       
     </div>
+
+    
+
     
     
     
@@ -443,21 +504,14 @@
   </article>
 
 
-
-    <div class="post-spread">
-      
-    </div>
   </div>
 
 
           </div>
           
 
+  
 
-          
-  <div class="comments" id="comments">
-    
-  </div>
 
 
         </div>
@@ -480,99 +534,151 @@
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/uploads/avatar.jpeg"
-               alt="xiaode" />
-          <p class="site-author-name" itemprop="name">xiaode</p>
-           
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.jpeg"
+                alt="xiaode" />
+            
+              <p class="site-author-name" itemprop="name">xiaode</p>
               <p class="site-description motion-element" itemprop="description">天堂有路你不走，学海无涯苦作舟</p>
-          
-        </div>
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
-            
-              <a href="/archives/">
-            
-                <span class="site-state-item-count">21</span>
-                <span class="site-state-item-name">日志</span>
-              </a>
-            </div>
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-categories">
-              <a href="/categories/index.html">
-                <span class="site-state-item-count">7</span>
-                <span class="site-state-item-name">分类</span>
-              </a>
-            </div>
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">18</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
           </div>
-        
 
-        <div class="links-of-author motion-element">
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">21</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-name">categories</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">18</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/LeonardLi" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="liyangde66@gmail.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="http://weibo.com/p/1005052197708580" target="_blank" title="Weibo"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+
           
             
-              <span class="links-of-author-item">
-                <a href="https://github.com/LeonardLi" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-github"></i>
-                  
-                    
-                      GitHub
-                    
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://weibo.com/p/1005052197708580" target="_blank" title="Weibo">
-                  
-                    <i class="fa fa-fw fa-weibo"></i>
-                  
-                    
-                      Weibo
-                    
-                </a>
-              </span>
-            
           
+          
+
         </div>
-
-        
-        
-
-        
-        
-
-        
-
-
       </section>
 
       
@@ -589,21 +695,35 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy; 
-  <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
-    <i class="fa fa-"></i>
+        <div class="copyright"> &copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">xiaode</span>
+
+  
 
   
 </div>
 
 
 
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> v3.3.8</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Mist</a> v6.5.0</div>
+
+
+
+
         
+
 
 
 
@@ -622,6 +742,11 @@
       </div>
     
 
+    
+	
+    
+
+    
   </div>
 
   
@@ -640,7 +765,6 @@
 
 
 
-  
 
 
 
@@ -653,61 +777,49 @@
 
 
 
-  
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
 
 
 
   
   
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
-
-
-
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
-
-
-
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
   
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/utils.js?v=6.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.5.0"></script>
 
 
-	
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.5.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.5.0"></script>
 
 
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.5.0"></script>
 
 
 
@@ -715,9 +827,9 @@
 
 
 
-
-
   
+
+
 
 
 
@@ -732,6 +844,24 @@
 
 
 
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+
+
+  
   
 
   

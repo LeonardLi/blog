@@ -2,15 +2,27 @@
 
 
 
+
+
+
+
+
+
+
+
+
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next mist use-motion" lang="default">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
 <meta name="theme-color" content="#222">
+
+
+
 
 
 
@@ -38,36 +50,6 @@
 
 
 
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
 
 
 
@@ -76,37 +58,25 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=6.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="share, acknowledge" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.5.0">
 
 
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.5.0">
 
 
-
-  <link rel="alternate" href="/atom.xml" title="积水成渊" type="application/atom+xml" />
-
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.5.0">
 
 
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+  <link rel="mask-icon" href="/images/logo.svg?v=6.5.0" color="#222">
 
 
 
 
 
 
-<meta name="description" content="天堂有路你不走，学海无涯苦作舟">
-<meta property="og:type" content="website">
-<meta property="og:title" content="积水成渊">
-<meta property="og:url" content="http://leonardli.github.io/index.html">
-<meta property="og:site_name" content="积水成渊">
-<meta property="og:description" content="天堂有路你不走，学海无涯苦作舟">
-<meta property="og:locale" content="zh-Hans">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="积水成渊">
-<meta name="twitter:description" content="天堂有路你不走，学海无涯苦作舟">
 
 
 
@@ -114,16 +84,14 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
-    version: '5.1.2',
-    sidebar: {"position":"left","display":"always","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
+    scheme: 'Mist',
+    version: '6.5.0',
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
     tabs: true,
-    motion: true,
-    duoshuo: {
-      userId: '9467035',
-      author: '博主'
-    },
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -135,12 +103,38 @@
 </script>
 
 
+  
+
+
+
+
+  <meta name="description" content="天堂有路你不走，学海无涯苦作舟">
+<meta property="og:type" content="website">
+<meta property="og:title" content="积水成渊">
+<meta property="og:url" content="http://leonardli.github.io/index.html">
+<meta property="og:site_name" content="积水成渊">
+<meta property="og:description" content="天堂有路你不走，学海无涯苦作舟">
+<meta property="og:locale" content="default">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="积水成渊">
+<meta name="twitter:description" content="天堂有路你不走，学海无涯苦作舟">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="积水成渊" type="application/atom+xml" />
+
+
+
 
   <link rel="canonical" href="http://leonardli.github.io/"/>
 
 
 
-
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
 
   <title>积水成渊</title>
   
@@ -152,9 +146,39 @@
 
 
 
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
 
   
   
@@ -171,19 +195,21 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">积水成渊</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+    
       
         <p class="site-subtitle">xiaode的博客</p>
       
+    
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="Toggle navigation bar">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -191,75 +217,69 @@
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
+          
+          <li class="menu-item menu-item-home menu-item-active">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
+  </li>
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-sitemap">
-          <a href="/sitemap.xml" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
-            
-            站点地图
-          </a>
-        </li>
-      
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />About</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />Tags<span class="badge">18</span></a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />Categories<span class="badge">7</span></a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives<span class="badge">21</span></a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-sitemap">
+    <a href="/sitemap.xml" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />Sitemap</a>
+  </li>
 
       
+      
     </ul>
+  
+
+  
+    
+
   
 
   
@@ -267,12 +287,20 @@
 
 
 
- </div>
+  
+
+
+
+</div>
     </header>
+
+    
+
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
@@ -285,6 +313,8 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
@@ -294,7 +324,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xiaode">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="天堂有路你不走，学海无涯苦作舟">
       <meta itemprop="image" content="/uploads/avatar.jpeg">
     </span>
 
@@ -309,25 +339,40 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/11/01/人生新篇/" itemprop="url">人生新篇</a></h1>
+                <a class="post-title-link" href="/2018/11/01/人生新篇/" itemprop="url">
+                  人生新篇
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-01T10:49:19-07:00">
-                2018-11-01
-              </time>
+
+              
+                
+              
+
+              <time title="Created: 2018-11-01 10:49:19 / Modified: 10:58:18" itemprop="dateCreated datePublished" datetime="2018-11-01T10:49:19-07:00">2018-11-01</time>
             
 
             
+              
 
+              
             
           </span>
 
@@ -340,14 +385,10 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/个人/" itemprop="url" rel="index">
-                    <span itemprop="name">个人</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/个人/" itemprop="url" rel="index"><span itemprop="name">个人</span></a></span>
 
                 
                 
@@ -383,19 +424,15 @@
       
         
           
-          来美国两个月了，一切安好，先挖坑以后填。望笔耕不辍。
+            <p>来美国两个月了，一切安好，先挖坑以后填。望笔耕不辍。</p>
 
           
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/11/01/人生新篇/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
@@ -432,6 +469,8 @@
 
   
   
+  
+
   
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -443,7 +482,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xiaode">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="天堂有路你不走，学海无涯苦作舟">
       <meta itemprop="image" content="/uploads/avatar.jpeg">
     </span>
 
@@ -458,25 +497,52 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/08/30/关于图床两三事/" itemprop="url">关于图床两三事</a></h1>
+                <a class="post-title-link" href="/2017/08/30/关于图床两三事/" itemprop="url">
+                  关于图床两三事
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-30T21:36:03-07:00">
-                2017-08-30
-              </time>
+
+              
+                
+              
+
+              <time title="Created: 2017-08-30 21:36:03" itemprop="dateCreated datePublished" datetime="2017-08-30T21:36:03-07:00">2017-08-30</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-11-01 11:24:41" itemprop="dateModified" datetime="2018-11-01T11:24:41-07:00">2018-11-01</time>
+              
             
           </span>
 
@@ -489,14 +555,10 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/经验/" itemprop="url" rel="index">
-                    <span itemprop="name">经验</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/经验/" itemprop="url" rel="index"><span itemprop="name">经验</span></a></span>
 
                 
                 
@@ -532,21 +594,23 @@
       
         
           
-          经常写博客遇到插入图片的需求，以前因为 懒 直接塞到到了相对路径下的资源文件里，后来用了一段时间的七牛云对象存储做图床，嫌弃上传文件再导出链接实在太麻烦就放弃了，回归了塞资源文件的老路数。今天偶然看到了推送关于解决图床问题的方法，懒如我也兴起试试。
-原文链接在此
-总结一下基本方法有
-123公共图床:
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/08/30/关于图床两三事/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <p><strong>update 11/1/2018</strong><br>肉翻到美帝后直接更换到了<a href="https://imgur.com/" target="_blank" rel="external">imgur</a>.<br>emmmm, 真香<br>以下是测试：<br><img src="https://i.imgur.com/cSOzrLR.jpg" alt="Imgur"></p>
+<p>从注册到使用仅仅用时30s, 每张图片甚至提供生成的各种link, 用户体验极佳.</p>
+<p><img src="https://i.imgur.com/OTe8TiM.jpg" alt="Imgur"></p>
+<hr>
+<p>经常写博客遇到插入图片的需求，以前因为 <strong>懒</strong> 直接塞到到了<code>相对路径下的资源文件</code>里，后来用了一段时间的<code>七牛云</code>对象存储做图床，嫌弃上传文件再导出链接实在太麻烦就放弃了，回归了塞资源文件的老路数。今天偶然看到了推送关于解决图床问题的方法，懒如我也兴起试试。</p>
+<p><a href="https://sspai.com/post/40499" target="_blank" rel="external">原文链接在此</a></p>
+<p>总结一下基本方法有</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">公共图床: 微博，Imgur，SM.MS(很奇怪的名字)</div><div class="line">自建图床(云服务): 七牛云，又拍云，阿里云OSS</div><div class="line">自建图床(开源方案): Lychee，树洞外链</div></pre></td></tr></table></figure>
+<p>方法殊途同归，使用图床的目的还是希望文章的图片资源能有更好的加载速度和稳定的显示效果。最终还是回归了使用图床的日子。另外强推Mac上一款图片上传工具<code>iPic</code>，直接解决了我之前使用图床的痛点，支持七牛又拍等多个图床，方便上传和使用外链。</p>
+
+          
         
       
     </div>
+
+    
+
     
     
     
@@ -583,6 +647,8 @@
 
   
   
+  
+
   
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -594,7 +660,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xiaode">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="天堂有路你不走，学海无涯苦作舟">
       <meta itemprop="image" content="/uploads/avatar.jpeg">
     </span>
 
@@ -609,25 +675,52 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/08/26/Lab/" itemprop="url">How Did I Build Docker Services for My Lab</a></h1>
+                <a class="post-title-link" href="/2017/08/26/Lab/" itemprop="url">
+                  How Did I Build Docker Services for My Lab
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-26T18:53:50-07:00">
-                2017-08-26
-              </time>
+
+              
+                
+              
+
+              <time title="Created: 2017-08-26 18:53:50" itemprop="dateCreated datePublished" datetime="2017-08-26T18:53:50-07:00">2017-08-26</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2017-09-13 04:54:01" itemprop="dateModified" datetime="2017-09-13T04:54:01-07:00">2017-09-13</time>
+              
             
           </span>
 
@@ -640,14 +733,10 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Experience/" itemprop="url" rel="index">
-                    <span itemprop="name">Experience</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Experience/" itemprop="url" rel="index"><span itemprop="name">Experience</span></a></span>
 
                 
                 
@@ -683,18 +772,51 @@
       
         
           
-          Recently I have been assigned to build some online services for my Lab such as official wiki, code repository, Piazza… I have physical server machine 
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/08/26/Lab/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <p>Recently I have been assigned to build some online services for my Lab such as official wiki, code repository, Piazza… I have physical server machine inmy hand with pretty good hardwares and I want to build and configure these services on the bare machine at first. But the configurations for each service really annoy me and I decide to establish the whole services in another way – <strong>Docker</strong>.</p>
+<p>My OS info is as listed below:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">sdic@SDIC:~$ uname -a</div><div class="line">Linux SDIC 4.4.0-21-generic #37-Ubuntu SMP Mon Apr 18 18:33:37 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux</div><div class="line">sdic@SDIC:~$ sudo lsb_release -a</div><div class="line">No LSB modules are available.</div><div class="line">Distributor ID:	Ubuntu</div><div class="line">Description:	Ubuntu Artful Aardvark (development branch)</div><div class="line">Release:	17.10</div><div class="line">Codename:	artful</div></pre></td></tr></table></figure>
+<p>It is said:</p>
+<blockquote>
+<p>Docker - Build, Ship, and Run Any App, Anywhere</p>
+</blockquote>
+<p>So I make a list, and build these services step by step.</p>
+<h2 id="step-0"><a href="#step-0" class="headerlink" title="step 0"></a>step 0</h2><p>Of course the first step must be installing the docker in physical machine. I follow the <a href="https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/" target="_blank" rel="external">official guides</a>. However, my networking state seems to be not as good as others(F**K GFW), and it comes up with some problems when I use the docker official repository. After adding the official GPG key, I get  <code>404</code> connect error after I run <code>apt update</code>, and I have no idea how to deal with it. So I turn to <a href="https://zouyapeng.gitbooks.io/docker/content/DockerInstallation/ubuntu_16_04.html" target="_blank" rel="external">other solution</a> and get the docker installed on my machine.</p>
+<h2 id="step-1"><a href="#step-1" class="headerlink" title="step 1"></a>step 1</h2><p><strong>Requirement Analysis</strong>: The total requirements are as followed:</p>
+<blockquote>
+<ol>
+<li>A website for Lab basic info, like Wiki</li>
+<li>A code repository for team collaboration</li>
+<li>A forum for students who enroll the courses provided by our Lab  (Piazza).</li>
+<li>A tool for managing the services’ lifetime, resource, version, backups and so on.</li>
+</ol>
+</blockquote>
+<p>So I explore the <a href="https://hub.docker.com/" target="_blank" rel="external">docker hub</a> to look for services matched my need. Through carefully comparing, I get another list:</p>
+<blockquote>
+<ul>
+<li>Website – <a href="https://hub.docker.com/r/istepanov/dokuwiki/" target="_blank" rel="external">Dokuwiki</a> </li>
+<li>Code repository – <a href="https://hub.docker.com/r/sameersbn/gitlab/" target="_blank" rel="external">GitLab</a></li>
+<li>Forum – <a href="https://hub.docker.com/r/skyzhou/docker-discuz/" target="_blank" rel="external">Dizcuss</a></li>
+<li>Management tool –<a href="https://shipyard-project.com/" target="_blank" rel="external">Shipyard</a> </li>
+</ul>
+</blockquote>
+<h2 id="step-2"><a href="#step-2" class="headerlink" title="step 2"></a>step 2</h2><p>Decided which services to install, here comes another question: <strong>How to manage my docker cluster</strong>? This question indicates numbers of aspects in operation and maintenance.</p>
+<h3 id="Backup-amp-Recovery"><a href="#Backup-amp-Recovery" class="headerlink" title="Backup &amp; Recovery"></a>Backup &amp; Recovery</h3><p>As we know, the docker images run as instances on the machine, each image has its own version. When we want to update the image, how do we deal with the data in the instances? If we just force updating the image and restart the container, all data will be erased. At this point, we need to further understand the docker. Based on my konwledge, the running instance owns a special directory called <code>data volume</code>. It can bypass UFS and </p>
+<ul>
+<li>shared among the containers</li>
+<li>mofified immediately</li>
+<li>isolated from the image</li>
+<li>persisted even the container being deleted  </li>
+</ul>
+<p>According to the function of data volume, we can easily create or mount the volume to the container</p>
+<h3 id="Start-amp-Stop"><a href="#Start-amp-Stop" class="headerlink" title="Start &amp; Stop"></a>Start &amp; Stop</h3><h3 id="Monitoring-amp-Logging"><a href="#Monitoring-amp-Logging" class="headerlink" title="Monitoring &amp; Logging"></a>Monitoring &amp; Logging</h3><h2 id="setp-3"><a href="#setp-3" class="headerlink" title="setp 3"></a>setp 3</h2><p>Install these services on the machine and configure them. That is least important part, cuz I just refer to the official guidence and follow some advices from the commentary. I still post them out for convenience.</p>
+<h3 id="DokuWiki"><a href="#DokuWiki" class="headerlink" title="DokuWiki"></a>DokuWiki</h3><h3 id="GitLab"><a href="#GitLab" class="headerlink" title="GitLab"></a>GitLab</h3><h3 id="Forum"><a href="#Forum" class="headerlink" title="Forum"></a>Forum</h3>
+          
         
       
     </div>
+
+    
+
     
     
     
@@ -731,6 +853,8 @@
 
   
   
+  
+
   
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -742,7 +866,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xiaode">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="天堂有路你不走，学海无涯苦作舟">
       <meta itemprop="image" content="/uploads/avatar.jpeg">
     </span>
 
@@ -757,25 +881,52 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/03/23/Ionic的一些用法/" itemprop="url">Ionic的一些用法</a></h1>
+                <a class="post-title-link" href="/2017/03/23/Ionic的一些用法/" itemprop="url">
+                  Ionic的一些用法
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-23T11:45:20-07:00">
-                2017-03-23
-              </time>
+
+              
+                
+              
+
+              <time title="Created: 2017-03-23 11:45:20" itemprop="dateCreated datePublished" datetime="2017-03-23T11:45:20-07:00">2017-03-23</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2017-08-30 19:03:57" itemprop="dateModified" datetime="2017-08-30T19:03:57-07:00">2017-08-30</time>
+              
             
           </span>
 
@@ -788,14 +939,10 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/技术/" itemprop="url" rel="index">
-                    <span itemprop="name">技术</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/技术/" itemprop="url" rel="index"><span itemprop="name">技术</span></a></span>
 
                 
                 
@@ -831,22 +978,64 @@
       
         
           
-          #使用ionic框架开发hybrid应用
-什么是ionic？
-Start building high-quality mobile apps with the tech you know and love.
+            <p>#使用ionic框架开发hybrid应用</p>
+<h2 id="什么是ionic？"><a href="#什么是ionic？" class="headerlink" title="什么是ionic？"></a>什么是ionic？</h2><blockquote>
+<p>Start building high-quality mobile apps with the tech you know and love.</p>
+</blockquote>
+<p>根据官方的介绍结合本人的理解，ionic是cordova(phoneGap)加上一套移动端适配的样式和开发套件。</p>
+<p>每个手机就像电脑一样，都带着自己的操作系统。如果你愿意，你可以从头写一个浏览器，把浏览地址隐藏了，这就像你的一个app了，对吧。当然，我们自己写浏览器，这也太难了，所以我们肯定不是这么做的。其实，我们只是基于各种手机上Web浏览器内核去做手脚，而Js是Web开发的最佳语言，至于如何封装成一个Web app？说实话，我也没有真正去探究过是如何去做的，通过一些移动开发框架，你只需要专注于写你的前端代码，然后通过一个开发框架的黑盒的操作，编译后就成了一个可以安装的App了。</p>
+<h3 id="什么是cordova-PhoneGap"><a href="#什么是cordova-PhoneGap" class="headerlink" title="什么是cordova(PhoneGap)?"></a>什么是cordova(PhoneGap)?</h3><p>一些背景小故事：</p>
+<blockquote>
+<p>08年一次ios开发者大会上来自Nitobi软件公司的几个家伙突发奇想，提出一个想法，想做一个工具来弥补web 和ios开发之间的不足，并提出 Bridging the gap between the web and the iPhone sdk<br>09年他们推出android adk和blackberry sdk，成了移动开发者的福音，就连ibm也加入进来。phonegap继续成长，在2011年10月，整个Nitobi团队被adobe收购，PhoneGap的项目主管Brian LeRoux指出开源PhoneGap的决定在Adobe收购Nitobi之前就做出了，由于Adobe现在拥有PhoneGap商标，他们不得不换个名字，第一个选中的名字是Callback，毫无创意，因此再改一次，产品现在叫Apache Cordova。随后adobe把 phonegap送给了apache软件基金会，接着apache把phonegap改名为cordova，cordova是Nitobi团队当时坐落的街道名称，用此名来纪念Nitobi团队的贡献。</p>
+</blockquote>
+<ul>
+<li><a href="http://cordova.apache.org/" target="_blank" rel="external">Apache Cordava</a></li>
+<li><a href="http://phonegap.com/" target="_blank" rel="external">PhoneGap</a></li>
+</ul>
+<p><img src="http://7xlkqd.com1.z0.glb.clouddn.com/cordova.png" alt="Cordova 框架图"></p>
+<h2 id="为什么要使用ionic？"><a href="#为什么要使用ionic？" class="headerlink" title="为什么要使用ionic？"></a>为什么要使用ionic？</h2><p>为了web程序员可以抢移动端程序猿的饭碗。。。开个玩笑<br>为了更敏捷！！！ <em>write once run everywhere</em>！<br>原来的移动客户端开发—周期长，适配麻烦。为了覆盖iOS和android两个平台，不得不招两波程序员整天在公司互相鄙视，UI和产品要根据两种平台不同的设计语言来设计两套交互和原型，浪费人力物力。(<strong>扁平化</strong>  or <strong>Material</strong>)</p>
+<h2 id="关于移动端开发环境的搭建"><a href="#关于移动端开发环境的搭建" class="headerlink" title="关于移动端开发环境的搭建"></a>关于移动端开发环境的搭建</h2><h3 id="0"><a href="#0" class="headerlink" title="0"></a>0</h3><p>比较关键的几个组件：</p>
+<ul>
+<li>JDK</li>
+<li>Android SDK</li>
+<li>Node.js</li>
+<li>Ionic, Cordova</li>
+</ul>
+<h3 id="Android"><a href="#Android" class="headerlink" title="Android"></a>Android</h3><p>首先看一下官方教程,主要是一些环境变量配置：</p>
+<ul>
+<li><a href="https://cordova.apache.org/docs/en/6.x/guide/platforms/android/" target="_blank" rel="external">Cordova官方配置教程</a></li>
+</ul>
+<p>然后是IDE，首选的IDE当然是Google的AS</p>
+<ul>
+<li><a href="https://developer.android.com/studio/intro/index.html" target="_blank" rel="external">Android Studio</a></li>
+</ul>
+<p>配置完毕后可以使用adb命令检查android SDK路径是否配置正确</p>
+<p><img src="http://7xlkqd.com1.z0.glb.clouddn.com/adb.jpg" alt="举个栗子"></p>
+<p>因为身在墙内，各位同学在更新SDK时肯定会遇到各种问题，可参考以下解决方案：</p>
+<ul>
+<li><a href="http://www.androiddevtools.cn/" target="_blank" rel="external">安卓开发者</a></li>
+</ul>
+<h4 id="如何打包"><a href="#如何打包" class="headerlink" title="如何打包?"></a>如何打包?</h4><p>当然可以直接使用内置脚手架工具来打包啦：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> Android</div><div class="line">ionic run android --prod --release</div><div class="line"><span class="meta">#</span> or</div><div class="line">ionic build android --prod --release</div></pre></td></tr></table></figure>
+<h3 id="iOS"><a href="#iOS" class="headerlink" title="iOS"></a>iOS</h3><p>苹果配置相对Android比较简单，相对麻烦的是开发者者账号和签名，我们可以使用自己的私有账号给应用签名发布在自己的手机上进行调适。</p>
+<p><a href="https://cordova.apache.org/docs/en/6.x/guide/platforms/ios/" target="_blank" rel="external">Cordova官方配置教程</a></p>
+<h4 id="如何打包？"><a href="#如何打包？" class="headerlink" title="如何打包？"></a>如何打包？</h4><p>参考官方 <a href="https://ionicframework.com/docs/v2/intro/deploying/" target="_blank" rel="external">iOS打包发布</a> </p>
+<h2 id="各平台如何调试？"><a href="#各平台如何调试？" class="headerlink" title="各平台如何调试？"></a>各平台如何调试？</h2><p><a href="http://jetgeng.github.io/ionic-xiang-mu-de-diao-shi.html" target="_blank" rel="external">如何调适？</a></p>
+<p>以下为个人推荐:</p>
+<ul>
+<li><p>Android 使用Chrome的inspect工具</p>
+</li>
+<li><p>iPhone  建议使用Mac Xcode的iPhone模拟器来调适</p>
+</li>
+</ul>
 
-根据官方的介绍结合本人的理解，ionic是cordova(phoneGap)加上一套移动端
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/03/23/Ionic的一些用法/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+          
         
       
     </div>
+
+    
+
     
     
     
@@ -883,6 +1072,8 @@ Start building high-quality mobile apps with the tech you know and love.
 
   
   
+  
+
   
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -894,7 +1085,7 @@ Start building high-quality mobile apps with the tech you know and love.
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xiaode">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="天堂有路你不走，学海无涯苦作舟">
       <meta itemprop="image" content="/uploads/avatar.jpeg">
     </span>
 
@@ -909,25 +1100,40 @@ Start building high-quality mobile apps with the tech you know and love.
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/02/21/关于前端的一些知识/" itemprop="url">关于前端的一些知识</a></h1>
+                <a class="post-title-link" href="/2017/02/21/关于前端的一些知识/" itemprop="url">
+                  关于前端的一些知识
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-21T22:06:42-08:00">
-                2017-02-21
-              </time>
+
+              
+                
+              
+
+              <time title="Created: 2017-02-21 22:06:42 / Modified: 06:37:32" itemprop="dateCreated datePublished" datetime="2017-02-21T22:06:42-08:00">2017-02-21</time>
             
 
             
+              
 
+              
             
           </span>
 
@@ -961,18 +1167,23 @@ Start building high-quality mobile apps with the tech you know and love.
       
         
           
-          TypeScript与JavaScript的区别在哪里？1234TypeScript是ES6的超集。至于需不需要使用，在于你所需要的场景。比如在Angular2中，用TypeScript明显好于ES6。-- 某网友TypeScript的开发者c#之父，所以这个TypeScript的很多语言特性是从c
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/02/21/关于前端的一些知识/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <h1 id="TypeScript与JavaScript的区别在哪里？"><a href="#TypeScript与JavaScript的区别在哪里？" class="headerlink" title="TypeScript与JavaScript的区别在哪里？"></a>TypeScript与JavaScript的区别在哪里？</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">TypeScript是ES6的超集。至于需不需要使用，在于你所需要的场景。比如在Angular2中，用TypeScript明显好于ES6。</div><div class="line">-- 某网友</div><div class="line"></div><div class="line">TypeScript的开发者c#之父，所以这个TypeScript的很多语言特性是从c#中移过来的。TypeScript大概是ES7的实现，所以从语法角度来讲，是具有很大优势。TypeScript可选择编译成ES5或ES3，ts文件编译成js文件，并且ts文件可直接在浏览器中调试。TypeScript还有一大优势是配合宇宙最强编译器VS,开发效率非常高。唯一的不足只是用TypeScript开发的人太少。</div></pre></td></tr></table></figure>
+<h1 id="什么是ECMA？"><a href="#什么是ECMA？" class="headerlink" title="什么是ECMA？"></a>什么是ECMA？</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">ECMAScript 6.0（以下简称ES6）是JavaScript语言的下一代标准，已经在2015年6月正式发布了。它的目标，是使得JavaScript语言可以用来编写复杂的大型应用程序，成为企业级开发语言。</div><div class="line">--阮一峰</div></pre></td></tr></table></figure>
+<h1 id="ECMAScript和JavaScript的关系？"><a href="#ECMAScript和JavaScript的关系？" class="headerlink" title="ECMAScript和JavaScript的关系？"></a>ECMAScript和JavaScript的关系？</h1><p>由于JavaScript的创造者Netscae公司的版权问题吧，ECMAScript不能叫Javascript。总之，ECMAScript和JavaScript的关系是，前者是后者的规格，后者是前者的一种实现（另外的ECMAScript方言还有Jscript和ActionScript）。</p>
+<h1 id="angularJS和第一问中两者的关系是什么？"><a href="#angularJS和第一问中两者的关系是什么？" class="headerlink" title="angularJS和第一问中两者的关系是什么？"></a>angularJS和第一问中两者的关系是什么？</h1><p><strong>AngularJS是一款优秀的前端JS框架</strong><br>AngularJS2是基于typescript来开发的。</p>
+<p>在2014年底，Google宣布Angular 2将会对AngularJS进行完全地重写，他们甚至还创建了一门新的语言，名为“AtScript”，他们本来希望使用这门语言来编写Angular 2应用。</p>
+<p>但是，随后Microsoft同意在它们的TypeScript语言（JavaScript的一个严格超集）上添加对装饰符（decorator）的支持，所以，它就成为了开发Angular 2框架本身所使用的语言，并且还是使用AngularJS框架开发应用的推荐语言。</p>
+<p>另外，我们还可以使用JavaScript（ECMAScript 5和6均可）和Dart来编写Angular 2应用。</p>
+<p>除此之外，Angular团队还集成了Microsoft的另外一个产品到Angular 2框架之中，这就是反应型JavaScript扩展（reactive JavaScript extension）的RxJS库。</p>
+<p>Angular 2并不是一个MVC框架，而是基于组件（component）的框架。在Angular 2中，应用是松耦合组件所组成的树。</p>
+<h1 id="JS的特性有哪些？"><a href="#JS的特性有哪些？" class="headerlink" title="JS的特性有哪些？"></a>JS的特性有哪些？</h1>
+          
         
       
     </div>
+
+    
+
     
     
     
@@ -1009,6 +1220,8 @@ Start building high-quality mobile apps with the tech you know and love.
 
   
   
+  
+
   
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -1020,7 +1233,7 @@ Start building high-quality mobile apps with the tech you know and love.
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xiaode">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="天堂有路你不走，学海无涯苦作舟">
       <meta itemprop="image" content="/uploads/avatar.jpeg">
     </span>
 
@@ -1035,25 +1248,40 @@ Start building high-quality mobile apps with the tech you know and love.
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/01/08/嗯，第二个本命年的所想/" itemprop="url">嗯，第二个本命年的所想</a></h1>
+                <a class="post-title-link" href="/2017/01/08/嗯，第二个本命年的所想/" itemprop="url">
+                  嗯，第二个本命年的所想
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-01-08T23:00:31-08:00">
-                2017-01-08
-              </time>
+
+              
+                
+              
+
+              <time title="Created: 2017-01-08 23:00:31 / Modified: 08:03:09" itemprop="dateCreated datePublished" datetime="2017-01-08T23:00:31-08:00">2017-01-08</time>
             
 
             
+              
 
+              
             
           </span>
 
@@ -1066,14 +1294,10 @@ Start building high-quality mobile apps with the tech you know and love.
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/个人/" itemprop="url" rel="index">
-                    <span itemprop="name">个人</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/个人/" itemprop="url" rel="index"><span itemprop="name">个人</span></a></span>
 
                 
                 
@@ -1109,19 +1333,23 @@ Start building high-quality mobile apps with the tech you know and love.
       
         
           
-          过去的2016和来到的2017难免落入窠臼写一些年终总结的陈词滥调，但是真正开始动笔的时候又有了写下去的欲望，可见人是多么矛盾的存在。
-这一年过得十分安逸，继续躲在大学的象牙塔里，没了两年前刚入学的血气方刚，手中的笔一丢就是一年多，现在捡起来写这一两个字，竟觉得力有不逮，果然温水煮青蛙是会把青蛙弄死
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/01/08/嗯，第二个本命年的所想/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <h1 id="过去的2016和来到的2017"><a href="#过去的2016和来到的2017" class="headerlink" title="过去的2016和来到的2017"></a>过去的2016和来到的2017</h1><p>难免落入窠臼写一些年终总结的陈词滥调，但是真正开始动笔的时候又有了写下去的欲望，可见人是多么矛盾的存在。</p>
+<p>这一年过得十分安逸，继续躲在大学的象牙塔里，没了两年前刚入学的血气方刚，手中的笔一丢就是一年多，现在捡起来写这一两个字，竟觉得力有不逮，果然温水煮青蛙是会把青蛙弄死的。</p>
+<p>16年这一年的主题是所谓“科研”，上半年在跟着别人合伙科研，下半年在带着别人合伙科研，可一年后回头看，自己只不过打着科研的名号四处乱撞罢了。本想着搞那么一两个大新闻，认清了自己too young的现实情况下，还是为了毕业写写文章灌灌水吧。</p>
+<p>一年12月，大部分情况下是异国，时差和距离不是问题，我惶恐的是时间。看着周围的人在结婚生子，总会下意识地给自己订一个时间表，留给自己的时间真心不多了。17年恰逢本命，掰着手指一算25岁才能毕业，越成长来自各方的压力就越大，爱人不想辜负，亲人想要陪伴，自己又有前方未知的事业。说是迷茫，哪敢迷茫，奋然前行，路在何方？</p>
+<p>上半年还有课，且上且珍惜的度过了自己可能是学生生涯的最后一个学期，总体平稳，除了最后一门课考试掉了链子，影响到了自己的成绩，总归还是没有拿到奖学金，心里还是有丝丝不爽的。年中，丫头从美帝回来过暑假，陪读了两个多月，期间去了一趟北京参与了社会实践活动，收获还算是不少的，至少拓宽了眼界。对于帝都，依旧是爱不起来，索性就断了去北京的念头。家人在长三角，以后也会考虑定居在这边，毕竟家中独子，冷暖自知。</p>
+<p>下半年过得很快，快到一眨眼什么还没看清楚就翻到了17年。十一的时候幼稚的想要开始写论文，还给自己立了flag说12月底要写完，结果又扇了自己的脸，这都到来年的1月了，连草稿都没打完，果然是执行力极弱的人啊。反思!反思！反思！执行力和毅力，这两样东西曾经我以为我有，但是现在看来，我都缺乏的可怜。今年列的计划，健身，读书，写代码，一事无成。可怜！可悲！可叹！十一因为一次意外的手指受伤停止了健身的步伐，因为所谓的“科研”很忙，没有静下心来完整的读一本好书，自以为自己代码能力不错，却在长久的自大中逐渐生疏。年岁增长未必为人师长，因为所得不及所失。12月又去了北京参与了一次GNTC的会议，感受下工业界大牛们的</p>
+<p>吐槽了自己的2016这么久，是希望2017能不再重蹈覆辙。我知道这一年对我来说的重要性，更明白对于当下的我来说，时间是最宝贵的资源，所以今年的反思我会常常翻出来看，日日鞭笞自己，激励自己。<br>简单列个计划吧，省得过两天又抛到脑后去了。</p>
+<figure class="highlight plain"><figcaption><span>List</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">健身：身体是承载一切理想的基础</div><div class="line">专业技能：业务能力和熟练程度</div><div class="line">学术论文：总结问题能力和表达能力</div><div class="line">读50本有营养的书</div><div class="line">学习日语，复习英语</div><div class="line">好好爱小羽</div></pre></td></tr></table></figure>
+<p>这篇总结和计划我会再明年的年终总结中引用，希望明年的总结不会继续想今年这样打脸，也希望本命年一切顺遂，小羽能找到心仪的工作，叔叔阿姨爸爸妈妈各位亲人身体健康。</p>
+
+          
         
       
     </div>
+
+    
+
     
     
     
@@ -1158,6 +1386,8 @@ Start building high-quality mobile apps with the tech you know and love.
 
   
   
+  
+
   
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -1169,7 +1399,7 @@ Start building high-quality mobile apps with the tech you know and love.
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xiaode">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="天堂有路你不走，学海无涯苦作舟">
       <meta itemprop="image" content="/uploads/avatar.jpeg">
     </span>
 
@@ -1184,25 +1414,40 @@ Start building high-quality mobile apps with the tech you know and love.
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2016/10/22/NUMA基础实验报告/" itemprop="url">NUMA基础实验报告</a></h1>
+                <a class="post-title-link" href="/2016/10/22/NUMA基础实验报告/" itemprop="url">
+                  NUMA基础实验报告
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-10-22T18:32:30-07:00">
-                2016-10-22
-              </time>
+
+              
+                
+              
+
+              <time title="Created: 2016-10-22 18:32:30 / Modified: 03:41:54" itemprop="dateCreated datePublished" datetime="2016-10-22T18:32:30-07:00">2016-10-22</time>
             
 
             
+              
 
+              
             
           </span>
 
@@ -1215,14 +1460,10 @@ Start building high-quality mobile apps with the tech you know and love.
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/研究方向/" itemprop="url" rel="index">
-                    <span itemprop="name">研究方向</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/研究方向/" itemprop="url" rel="index"><span itemprop="name">研究方向</span></a></span>
 
                 
                 
@@ -1258,20 +1499,157 @@ Start building high-quality mobile apps with the tech you know and love.
       
         
           
-          NUMA基础模型参数测量方案实验目的本实验是为测量在具体平台下IONUMA模型的各项具体参数数值和分布，以此项数据作为参考来建立考虑IO访问下的新NUMA模型，填充相应的矩阵，以此来形成我们通过实验所测得经验模型。
-实验原理通过不同类型的Benchmark来分别测量：
-CPU-内存距离使用@Stre
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2016/10/22/NUMA基础实验报告/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <h1 id="NUMA基础模型参数测量方案"><a href="#NUMA基础模型参数测量方案" class="headerlink" title="NUMA基础模型参数测量方案"></a>NUMA基础模型参数测量方案</h1><h2 id="实验目的"><a href="#实验目的" class="headerlink" title="实验目的"></a>实验目的</h2><p>本实验是为测量在具体平台下IONUMA模型的各项具体参数数值和分布，以此项数据作为参考来建立考虑IO访问下的新NUMA模型，填充相应的矩阵，以此来形成我们通过实验所测得经验模型。</p>
+<h2 id="实验原理"><a href="#实验原理" class="headerlink" title="实验原理"></a>实验原理</h2><p>通过不同类型的Benchmark来分别测量：</p>
+<p>CPU-内存距离使用@<a href="https://www.cs.virginia.edu/stream/" target="_blank" rel="external">Stream</a>,这是一个经典的内存访问带宽的测量工具；CPU-网卡距离可以使用iPerf，使用@<a href="https://iperf.fr/iperf-download.php" target="_blank" rel="external">iPerf</a>可以指定buffer size，当我们使用较小的buffer size时，memory trunk会被cpu缓存，所以Intel的处理器会使用DCA技术直接写缓存，从而给出了一个与内存无关的访问场景</p>
+<p>网卡-内存距离，可以使用经典的@<a href="http://www.netperf.org/netperf/" target="_blank" rel="external">netperf</a>来测量。当使用netperf测量网络性能时，其主要过程在与由网卡buffer通过DMA操作写内存，故与该线程的CPU相对无关。</p>
+<p>在实验中，我们使用@<a href="https://linux.die.net/man/8/numactl" target="_blank" rel="external">numactl</a>来绑定所运行的cpu和memory，从而达到控制实验变量的目的。</p>
+<h3 id="相关工具"><a href="#相关工具" class="headerlink" title="相关工具"></a>相关工具</h3><p><strong>iPerf</strong></p>
+<ul>
+<li>iPerf2 features currently supported by iPerf3 :<br>TCP and UDP tests<br>Set port (-p)<br>Setting TCP options: No delay, MSS, etc.<br>Setting UDP bandwidth (-b)<br>Setting socket buffer size (-w)<br>Reporting intervals (-i)<br>Setting the iPerf buffer (-l)<br>Bind to specific interfaces (-B)<br>IPv6 tests (-6)<br>Number of bytes to transmit (-n)<br>Length of test (-t)<br>Parallel streams (-P)<br>Setting DSCP/TOS bit vectors (-S)<br>Change number output format (-f)</li>
+<li><p>New Features in iPerf 3.0 :<br>Dynamic server (client/server parameter exchange) – Most server options from iPerf2 can now be dynamically set by the client<br>Client/server results exchange<br>A iPerf3 server accepts a single client simultaneously (multiple clients simultaneously for iPerf2)<br>iPerf API (libiperf) – Provides an easy way to use, customize and extend iPerf functionality<br>-R, Reverse test mode – Server sends, client receives<br>-O, –omit N : omit the first n seconds (to ignore TCP slowstart)<br>-b, –bandwidth n[KM] for TCP (only UDP for IPERF 2): Set target bandwidth to n bits/sec (default 1 Mbit/sec for UDP, unlimited for TCP).<br>-V, –verbose : more detailed output than before<br>-J, –json : output in JSON format<br>-Z, –zerocopy : use a ‘zero copy’ sendfile() method of sending data. This uses much less CPU.<br>-T, –title str : prefix every output line with this string<br>-F, –file name : xmit/recv the specified file<br>-A, –affinity n/n,m : set CPU affinity (cores are numbered from 0 - Linux and FreeBSD only)<br>-k, –blockcount #[KMG] : number of blocks (packets) to transmit (instead of -t or -n)<br>-4, –version4 : only use IPv4<br>-6, –version6 : only use IPv6<br>-L, –flowlabel : set IPv6 flow label (Linux only)<br>-C, –linux-congestion : set congestion control algorithm (Linux and FreeBSD only) (-Z in iPerf2)<br>-d, –debug : emit debugging output. Primarily (perhaps exclusively) of use to developers.<br>-s, –server : iPerf2 can handle multiple client requests. iPerf3 will only allow one iperf connection at a time.</p>
+</li>
+<li><p>Features in iPerf 3.1 :<br>-I, –pidfile file write a file with the process ID, most useful when running as a daemon.<br>–cport : Specify the client-side port.<br>–sctp use SCTP rather than TCP (Linux, FreeBSD and Solaris).<br>–udp-counters-64bit : Support very long-running UDP tests, which could cause a counter to overflow<br>–logfile file : send output to a log file.</p>
+</li>
+<li><p>iPerf2 Features Not Supported by iPerf3 :<br>Bidirectional testing (-d / -r)<br>Data transmitted from stdin (-I)<br>TTL : time-to-live, for multicast (-T)<br>Exclude C(connection) D(data) M(multicast) S(settings) V(server) reports (-x)<br>Report as a Comma-Separated Values (-y)<br>Compatibility mode allows for use with older version of iPerf (-C)</p>
+</li>
+</ul>
+<p><strong>Stream</strong></p>
+<p><strong>Netperf</strong></p>
+<p><strong>numactl</strong></p>
+<ul>
+<li>useage:<br>numactl [ –interleave nodes ] [ –preferred node ] [ –membind nodes ] [ –cpunodebind nodes ] [ –physcpubind cpus ] [ –localalloc ] [–] command {arguments …}<br>numactl –show<br>numactl –hardware<br>numactl [ –huge ] [ –offset offset ] [ –shmmode shmmode ] [ –length length ] [ –strict ]<br>[ –shmid id ] –shm shmkeyfile | –file tmpfsfile<br>[ –touch ] [ –dump ] [ –dump-nodes ] memory policy</li>
+</ul>
+<p>本试验中应当使用的命令如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">numactl --membind= --cpubind=</div></pre></td></tr></table></figure>
+<h3 id="NUMA模型"><a href="#NUMA模型" class="headerlink" title="NUMA模型"></a>NUMA模型</h3><p>Platform相关信息：</p>
+<p>C-M Citrix<br>该矩阵记录该NUMA架构下，每个物理CPU访问不同区域内存的具体带宽信息</p>
+<p>N-M Citrix<br>该矩阵记录了网卡访问不同区域内存的平均距离，因为是CPU无关，我们考虑在这种情况的平均情况以防误差</p>
+<p>C-N Vector<br>网卡到CPU的距离有该向量记录，以同一个node中的CPU的平均值来表征。</p>
+<h2 id="实验内容"><a href="#实验内容" class="headerlink" title="实验内容"></a>实验内容</h2><h3 id="CPU-内存距离"><a href="#CPU-内存距离" class="headerlink" title="CPU-内存距离"></a>CPU-内存距离</h3><p>C-M</p>
+<table>
+<thead>
+<tr>
+<th>C\M</th>
+<th>Node0</th>
+<th>Node1</th>
+<th>Node2</th>
+<th>Node3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cpu0~7</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>cpu8~15</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>cpu16~24</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>cpu25~31</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="网卡-内存距离"><a href="#网卡-内存距离" class="headerlink" title="网卡-内存距离"></a>网卡-内存距离</h3><table>
+<thead>
+<tr>
+<th>N\M</th>
+<th>Node0</th>
+<th>Node1</th>
+<th>Node2</th>
+<th>Node3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Distance(cpu 0~7)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Distance(cpu 8~15)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Distance(cpu 16~23)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Distance(cpu 24~31)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Avg</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="CPU-网卡距离"><a href="#CPU-网卡距离" class="headerlink" title="CPU-网卡距离"></a>CPU-网卡距离</h3><table>
+<thead>
+<tr>
+<th>C\N</th>
+<th>Node0（cpu 0-7）</th>
+<th>Node1（cpu 8-15）</th>
+<th>Node2 （cpu 16-23）</th>
+<th>Node3 （cpu 24-31）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bandwith（avg）</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="实验步骤"><a href="#实验步骤" class="headerlink" title="实验步骤"></a>实验步骤</h2><ul>
+<li><p>CPU-内存距离测量<br>使用numactl工具将Stream线程的运行CPU和内存绑定在固定位置运行，从而测出带宽值，实验中我们将根据Stream的Arraysize设为100M，大于机器L3 cache的总和64M（16M*4）以防其使用cache加速</p>
+</li>
+<li><p>网卡-内存距离测量</p>
+</li>
+</ul>
+<ul>
+<li>CPU-网卡距离测量</li>
+</ul>
+<h2 id="实验结果"><a href="#实验结果" class="headerlink" title="实验结果"></a>实验结果</h2>
+          
         
       
     </div>
+
+    
+
     
     
     
@@ -1308,6 +1686,8 @@ CPU-内存距离使用@Stre
 
   
   
+  
+
   
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -1319,7 +1699,7 @@ CPU-内存距离使用@Stre
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xiaode">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="天堂有路你不走，学海无涯苦作舟">
       <meta itemprop="image" content="/uploads/avatar.jpeg">
     </span>
 
@@ -1334,25 +1714,40 @@ CPU-内存距离使用@Stre
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2016/10/16/ONP搭建过程/" itemprop="url">ONP搭建过程</a></h1>
+                <a class="post-title-link" href="/2016/10/16/ONP搭建过程/" itemprop="url">
+                  ONP搭建过程
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-10-16T23:17:03-07:00">
-                2016-10-16
-              </time>
+
+              
+                
+              
+
+              <time title="Created: 2016-10-16 23:17:03 / Modified: 08:58:54" itemprop="dateCreated datePublished" datetime="2016-10-16T23:17:03-07:00">2016-10-16</time>
             
 
             
+              
 
+              
             
           </span>
 
@@ -1365,14 +1760,10 @@ CPU-内存距离使用@Stre
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/研究方向/" itemprop="url" rel="index">
-                    <span itemprop="name">研究方向</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/研究方向/" itemprop="url" rel="index"><span itemprop="name">研究方向</span></a></span>
 
                 
                 
@@ -1408,20 +1799,29 @@ CPU-内存距离使用@Stre
       
         
           
-          一点背景近期在做一些NFV方向的研究，算是新兵蛋子一个. NFV和SDN的具体内容不在这里赘述，具体背景是想重现Intel ONP的平台来观测NFV在OpenStack平台上跑起来的性能如何。官方给了不少文档，但是由于所需的软件栈过于庞大，入手门槛还是挺高的。需要的软件如下：
-
-OpenStack 
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2016/10/16/ONP搭建过程/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <h1 id="一点背景"><a href="#一点背景" class="headerlink" title="一点背景"></a>一点背景</h1><p>近期在做一些NFV方向的研究，算是新兵蛋子一个. NFV和SDN的具体内容不在这里赘述，具体背景是想重现Intel ONP的平台来观测NFV在OpenStack平台上跑起来的性能如何。官方给了不少<a href="https://01.org/zh/packet-processing/intel%C2%AE-onp" target="_blank" rel="external">文档</a>，但是由于所需的软件栈过于庞大，入手门槛还是挺高的。需要的软件如下：</p>
+<ul>
+<li><a href="https://www.openstack.org/" target="_blank" rel="external">OpenStack</a> — Manages and orchestrates applications running on network nodes <a href="http://www.openstack.cn/" target="_blank" rel="external">中文社区</a></li>
+<li><a href="https://www.opendaylight.org/" target="_blank" rel="external">Opendaylight</a> — Enables programmability of networks of any size and scale</li>
+<li><a href="http://dpdk.org/" target="_blank" rel="external">DPDK</a> — Accelerates packet processing on general-purpose processors</li>
+<li><a href="http://openvswitch.org/" target="_blank" rel="external">Open vSwitch</a> — Performs virtual, multilayer network switching</li>
+<li><a href="http://www.linux-kvm.org/page/Main_Page" target="_blank" rel="external">Linux/KVM</a> — Provides operating system and hypervisor support</li>
+</ul>
+<p>看到这么多东西是不是已经晕了，别怕，我来简单梳理一下这些软件的使用结构:</p>
+<ol>
+<li>OpenStack是为我们提供云管理平台的组件，使用OpenStack我们可以动态的可靠的创建并维护我们的虚拟机，这个平台将云计算中的各项功能模块化并分拆开来，模块之间通过Http协议异步的进行通信，从而维持一个高可用的管理平台。其组件包括Nova，Neutron，Keystone，Swift，Cinder等等。</li>
+<li>Opendaylight是架设在云平台上用来管理并实现SDN/NFV的另一个开源项目，其目的是为了提供一个 Data plane/ Control plane 相分离的虚拟机拓扑结构，并与Open vSwitch结合，实现性能的提升。</li>
+<li>DPDK是Intel官方出的数据面开发工具集，个人理解是intel利用其硬件基础实现的网络IO性能提升，主要包括的是协议栈offline和“零拷贝”(0 copy)，将原来在内核的硬件驱动(网卡)功能解耦，并实现用户态程序直接获得数据包的功能。</li>
+<li>KVM，这个就不多说了，直接看论文去吧. <a href="https://www.kernel.org/doc/mirror/ols2007v1.pdf#page=225" target="_blank" rel="external">paper</a></li>
+</ol>
+<h1 id="具体过程"><a href="#具体过程" class="headerlink" title="具体过程"></a>具体过程</h1><h1 id="建议和思考"><a href="#建议和思考" class="headerlink" title="建议和思考"></a>建议和思考</h1><h1 id="踩过的坑-updating"><a href="#踩过的坑-updating" class="headerlink" title="踩过的坑(updating)"></a>踩过的坑(updating)</h1>
+          
         
       
     </div>
+
+    
+
     
     
     
@@ -1458,6 +1858,8 @@ OpenStack
 
   
   
+  
+
   
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -1469,7 +1871,7 @@ OpenStack
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xiaode">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="天堂有路你不走，学海无涯苦作舟">
       <meta itemprop="image" content="/uploads/avatar.jpeg">
     </span>
 
@@ -1484,25 +1886,52 @@ OpenStack
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2016/10/16/ST java/" itemprop="url">Sublime Text Java Plugins</a></h1>
+                <a class="post-title-link" href="/2016/10/16/ST java/" itemprop="url">
+                  Sublime Text Java Plugins
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-10-16T00:13:49-07:00">
-                2016-10-16
-              </time>
+
+              
+                
+              
+
+              <time title="Created: 2016-10-16 00:13:49" itemprop="dateCreated datePublished" datetime="2016-10-16T00:13:49-07:00">2016-10-16</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2016-10-17 07:41:12" itemprop="dateModified" datetime="2016-10-17T07:41:12-07:00">2016-10-17</time>
+              
             
           </span>
 
@@ -1515,14 +1944,10 @@ OpenStack
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/效率/" itemprop="url" rel="index">
-                    <span itemprop="name">效率</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/效率/" itemprop="url" rel="index"><span itemprop="name">效率</span></a></span>
 
                 
                 
@@ -1558,18 +1983,53 @@ OpenStack
       
         
           
-          使用sublime text搭建java开发环境 1.sublime text自带的java语法高亮和函数跳转足够我们审阅java代码，但是作为开发级别却远远不够。我们厌倦了eclipse漫长的等待和庞大的内存消耗，所以转向了轻量级的文本编辑器，而sublime text强大的插件系统为我们提供了自
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2016/10/16/ST java/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <h1 id="使用sublime-text搭建java开发环境"><a href="#使用sublime-text搭建java开发环境" class="headerlink" title="使用sublime text搭建java开发环境"></a>使用sublime text搭建java开发环境</h1><p> 1.sublime text自带的java语法高亮和函数跳转足够我们审阅java代码，但是作为开发级别却远远不够。我们厌倦了eclipse漫长的等待和庞大的内存消耗，所以转向了轻量级的文本编辑器，而sublime text强大的插件系统为我们提供了自定义IDE的可能。系统配置好JDK之后，sublime自带的build system也预先准备了java的编译脚本，这对hello world级别的java代码来说是足够的，但是对于稍微复杂点的java工程，就显得捉襟见肘了.</p>
+<p> 2.那么如何使用sublime？<br> 这里推荐几个插件,都可以使用sublime自带的package control快速获得.</p>
+<ul>
+<li><a href="https://javatar.readthedocs.io/en/latest/features.html" target="_blank" rel="external">javatar</a></li>
+<li><a href="https://packagecontrol.io/packages/JavaIME" target="_blank" rel="external">JavaIME</a></li>
+</ul>
+<h2 id="JavaIME"><a href="#JavaIME" class="headerlink" title="JavaIME"></a>JavaIME</h2><p> 可以实现包的快速导入，和各种变量的快速初始化</p>
+<p> 目前支持：</p>
+<ul>
+<li>Class Instance</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Type I-class name e.g. I-Scanner should show “java Scanner input = new Scanner(System.in);</div></pre></td></tr></table></figure>
+<ul>
+<li>Class declaration</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">pc -&gt; generates a public class declaration</div><div class="line">pcm -&gt; generates the public class declaration with a main method</div><div class="line">pcc -&gt; generates the public class declaration with a constructor</div><div class="line">pccm -&gt; generates the public class declaration with a main method and constructor</div><div class="line">pcfx -&gt; generates a public class declaration for JavaFX and a main mTestethod.</div></pre></td></tr></table></figure>
+<ul>
+<li>Import</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Note you can also press ENTER rather than TAB</div></pre></td></tr></table></figure>
+<ul>
+<li>Auto-Complete listener interfaces</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">To show a listener interface completion, type L- followed by the listener interface name. e.g.</div></pre></td></tr></table></figure>
+<ul>
+<li>Static properties</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Type S- followed by method name. e.g. Type s-magenta then TAB to generates</div></pre></td></tr></table></figure>
+<h2 id="Javatar"><a href="#Javatar" class="headerlink" title="Javatar"></a>Javatar</h2><p>一个强大的多方面支持java开发的插件系统,目前官方的说法是支持以下:</p>
+<ul>
+<li>Packages and Subpackages creation</li>
+<li>Class (also Abstract), Interface and Enumeration snippets with</li>
+<li>package/class name auto-complete and auto-import<br>Project/Package/Class build and run with dependencies [2]</li>
+<li>Packages path in status bar</li>
+<li>External libraries packages</li>
+<li>Internal console with input supports</li>
+<li>Organize Imports</li>
+</ul>
+<p>亲测感觉还不错，但是还没看到第三方jar包管理的那部分，有空再研究一下。官网上跟着startup做一遍基本上就会用了。</p>
+
+          
         
       
     </div>
+
+    
+
     
     
     
@@ -1608,6 +2068,8 @@ OpenStack
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
@@ -1617,7 +2079,7 @@ OpenStack
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xiaode">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="天堂有路你不走，学海无涯苦作舟">
       <meta itemprop="image" content="/uploads/avatar.jpeg">
     </span>
 
@@ -1632,25 +2094,52 @@ OpenStack
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2016/01/07/《记一次移动App开发项目经历》/" itemprop="url">《记一次移动App开发项目经历》</a></h1>
+                <a class="post-title-link" href="/2016/01/07/《记一次移动App开发项目经历》/" itemprop="url">
+                  《记一次移动App开发项目经历》
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-01-07T16:45:01-08:00">
-                2016-01-07
-              </time>
+
+              
+                
+              
+
+              <time title="Created: 2016-01-07 16:45:01" itemprop="dateCreated datePublished" datetime="2016-01-07T16:45:01-08:00">2016-01-07</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2016-10-15 09:45:31" itemprop="dateModified" datetime="2016-10-15T09:45:31-07:00">2016-10-15</time>
+              
             
           </span>
 
@@ -1663,14 +2152,10 @@ OpenStack
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/经验/" itemprop="url" rel="index">
-                    <span itemprop="name">经验</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/经验/" itemprop="url" rel="index"><span itemprop="name">经验</span></a></span>
 
                 
                 
@@ -1706,18 +2191,23 @@ OpenStack
       
         
           
-          写在前面的来交大CS读研的第一学期，学业生活都很充实，这是 高级软件工程这门课的课程设计，这门的任课老师沈阿姨是一位十分慈（xiong）祥（can）的老师，欢迎往后的的学弟踊跃选沈阿姨的课程。这次项目我们做的是一个二手交易网站和对应的移动端，开发时间大概是两个月，移动端要覆盖Android和iOS两
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2016/01/07/《记一次移动App开发项目经历》/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <h2 id="写在前面的"><a href="#写在前面的" class="headerlink" title="写在前面的"></a>写在前面的</h2><p>来交大CS读研的第一学期，学业生活都很充实，这是 <code>高级软件工程</code>这门课的课程设计，这门的任课老师沈阿姨是一位十分慈（xiong）祥（can）的老师，欢迎往后的的学弟踊跃选沈阿姨的课程。<br>这次项目我们做的是一个二手交易网站和对应的移动端，开发时间大概是两个月，移动端要覆盖Android和iOS两个平台。抱着学习的心态，我们选择（wa）了Cordova/ionic这种跨（da）平（keng）台工具，采用angularJS来编写移动端，使用web开发的思路来开发移动端应用，希望能够体会下hybrid开发的感觉。</p>
+<hr>
+<h2 id="Tech-Background"><a href="#Tech-Background" class="headerlink" title="Tech Background"></a>Tech Background</h2><ul>
+<li>AngularJS</li>
+<li>Cordova/ionic</li>
+</ul>
+<hr>
+<h2 id="开发经历"><a href="#开发经历" class="headerlink" title="开发经历"></a>开发经历</h2><hr>
+<h2 id="问题和解决思路"><a href="#问题和解决思路" class="headerlink" title="问题和解决思路"></a>问题和解决思路</h2><hr>
+<h2 id="我的愚见"><a href="#我的愚见" class="headerlink" title="我的愚见"></a>我的愚见</h2>
+          
         
       
     </div>
+
+    
+
     
     
     
@@ -1752,15 +2242,12 @@ OpenStack
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
 
           </div>
-          
-
-
           
 
         </div>
@@ -1783,99 +2270,151 @@ OpenStack
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/uploads/avatar.jpeg"
-               alt="xiaode" />
-          <p class="site-author-name" itemprop="name">xiaode</p>
-           
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.jpeg"
+                alt="xiaode" />
+            
+              <p class="site-author-name" itemprop="name">xiaode</p>
               <p class="site-description motion-element" itemprop="description">天堂有路你不走，学海无涯苦作舟</p>
-          
-        </div>
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
-            
-              <a href="/archives/">
-            
-                <span class="site-state-item-count">21</span>
-                <span class="site-state-item-name">日志</span>
-              </a>
-            </div>
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-categories">
-              <a href="/categories/index.html">
-                <span class="site-state-item-count">7</span>
-                <span class="site-state-item-name">分类</span>
-              </a>
-            </div>
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">18</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
           </div>
-        
 
-        <div class="links-of-author motion-element">
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">21</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-name">categories</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">18</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/LeonardLi" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="liyangde66@gmail.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="http://weibo.com/p/1005052197708580" target="_blank" title="Weibo"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+
           
             
-              <span class="links-of-author-item">
-                <a href="https://github.com/LeonardLi" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-github"></i>
-                  
-                    
-                      GitHub
-                    
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://weibo.com/p/1005052197708580" target="_blank" title="Weibo">
-                  
-                    <i class="fa fa-fw fa-weibo"></i>
-                  
-                    
-                      Weibo
-                    
-                </a>
-              </span>
-            
           
+          
+
         </div>
-
-        
-        
-
-        
-        
-
-        
-
-
       </section>
 
       
@@ -1892,21 +2431,35 @@ OpenStack
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy; 
-  <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
-    <i class="fa fa-"></i>
+        <div class="copyright"> &copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">xiaode</span>
+
+  
 
   
 </div>
 
 
 
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> v3.3.8</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Mist</a> v6.5.0</div>
+
+
+
+
         
+
 
 
 
@@ -1925,6 +2478,11 @@ OpenStack
       </div>
     
 
+    
+	
+    
+
+    
   </div>
 
   
@@ -1943,7 +2501,6 @@ OpenStack
 
 
 
-  
 
 
 
@@ -1956,61 +2513,45 @@ OpenStack
 
 
 
-  
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
 
 
 
   
   
-
-  
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
-
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
 
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
-
-
-
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
   
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/utils.js?v=6.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.5.0"></script>
 
 
-	
+
+  
+  
+
+  
+
+  
 
 
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.5.0"></script>
 
 
 
@@ -2018,9 +2559,9 @@ OpenStack
 
 
 
-
-
   
+
+
 
 
 
@@ -2035,6 +2576,46 @@ OpenStack
 
 
 
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+
+
+  
   
 
   

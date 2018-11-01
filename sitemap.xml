@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://leonardli.github.io/about/index.html</loc>
+    
+    <lastmod>2018-11-01T19:23:45.646Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://leonardli.github.io/2017/08/30/%E5%85%B3%E4%BA%8E%E5%9B%BE%E5%BA%8A%E4%B8%A4%E4%B8%89%E4%BA%8B/</loc>
+    
+    <lastmod>2018-11-01T18:24:41.417Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://leonardli.github.io/2018/11/01/%E4%BA%BA%E7%94%9F%E6%96%B0%E7%AF%87/</loc>
     
     <lastmod>2018-11-01T17:58:18.310Z</lastmod>
@@ -26,13 +40,6 @@
     <loc>http://leonardli.github.io/2017/03/23/Ionic%E7%9A%84%E4%B8%80%E4%BA%9B%E7%94%A8%E6%B3%95/</loc>
     
     <lastmod>2017-08-31T02:03:57.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://leonardli.github.io/2017/08/30/%E5%85%B3%E4%BA%8E%E5%9B%BE%E5%BA%8A%E4%B8%A4%E4%B8%89%E4%BA%8B/</loc>
-    
-    <lastmod>2017-08-30T14:27:41.000Z</lastmod>
     
   </url>
   
@@ -145,13 +152,6 @@
     <loc>http://leonardli.github.io/2015/09/07/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84Hexo%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%EF%BC%88Mac%E5%B9%B3%E5%8F%B0%EF%BC%89/</loc>
     
     <lastmod>2015-09-29T12:51:55.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://leonardli.github.io/about/index.html</loc>
-    
-    <lastmod>2015-09-08T15:11:34.000Z</lastmod>
     
   </url>
   

@@ -2,15 +2,27 @@
 
 
 
+
+
+
+
+
+
+
+
+
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next mist use-motion" lang="default">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
 <meta name="theme-color" content="#222">
+
+
+
 
 
 
@@ -38,36 +50,6 @@
 
 
 
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
 
 
 
@@ -76,37 +58,25 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=6.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="share, acknowledge" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.5.0">
 
 
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.5.0">
 
 
-
-  <link rel="alternate" href="/atom.xml" title="积水成渊" type="application/atom+xml" />
-
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.5.0">
 
 
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+  <link rel="mask-icon" href="/images/logo.svg?v=6.5.0" color="#222">
 
 
 
 
 
 
-<meta name="description" content="天堂有路你不走，学海无涯苦作舟">
-<meta property="og:type" content="website">
-<meta property="og:title" content="积水成渊">
-<meta property="og:url" content="http://leonardli.github.io/page/2/index.html">
-<meta property="og:site_name" content="积水成渊">
-<meta property="og:description" content="天堂有路你不走，学海无涯苦作舟">
-<meta property="og:locale" content="zh-Hans">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="积水成渊">
-<meta name="twitter:description" content="天堂有路你不走，学海无涯苦作舟">
 
 
 
@@ -114,16 +84,14 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
-    version: '5.1.2',
-    sidebar: {"position":"left","display":"always","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
+    scheme: 'Mist',
+    version: '6.5.0',
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
     tabs: true,
-    motion: true,
-    duoshuo: {
-      userId: '9467035',
-      author: '博主'
-    },
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -135,12 +103,38 @@
 </script>
 
 
+  
+
+
+
+
+  <meta name="description" content="天堂有路你不走，学海无涯苦作舟">
+<meta property="og:type" content="website">
+<meta property="og:title" content="积水成渊">
+<meta property="og:url" content="http://leonardli.github.io/page/2/index.html">
+<meta property="og:site_name" content="积水成渊">
+<meta property="og:description" content="天堂有路你不走，学海无涯苦作舟">
+<meta property="og:locale" content="default">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="积水成渊">
+<meta name="twitter:description" content="天堂有路你不走，学海无涯苦作舟">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="积水成渊" type="application/atom+xml" />
+
+
+
 
   <link rel="canonical" href="http://leonardli.github.io/page/2/"/>
 
 
 
-
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
 
   <title>积水成渊</title>
   
@@ -152,9 +146,39 @@
 
 
 
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
 
   
   
@@ -171,19 +195,21 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">积水成渊</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+    
       
         <p class="site-subtitle">xiaode的博客</p>
       
+    
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="Toggle navigation bar">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -191,75 +217,69 @@
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
+  </li>
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-sitemap">
-          <a href="/sitemap.xml" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
-            
-            站点地图
-          </a>
-        </li>
-      
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />About</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />Tags<span class="badge">18</span></a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />Categories<span class="badge">7</span></a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives<span class="badge">21</span></a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-sitemap">
+    <a href="/sitemap.xml" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />Sitemap</a>
+  </li>
 
       
+      
     </ul>
+  
+
+  
+    
+
   
 
   
@@ -267,12 +287,20 @@
 
 
 
- </div>
+  
+
+
+
+</div>
     </header>
+
+    
+
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
@@ -285,6 +313,8 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
@@ -294,7 +324,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xiaode">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="天堂有路你不走，学海无涯苦作舟">
       <meta itemprop="image" content="/uploads/avatar.jpeg">
     </span>
 
@@ -309,25 +339,52 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2015/11/23/一点拙见/" itemprop="url">一点拙见</a></h1>
+                <a class="post-title-link" href="/2015/11/23/一点拙见/" itemprop="url">
+                  一点拙见
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-11-23T19:49:59-08:00">
-                2015-11-23
-              </time>
+
+              
+                
+              
+
+              <time title="Created: 2015-11-23 19:49:59" itemprop="dateCreated datePublished" datetime="2015-11-23T19:49:59-08:00">2015-11-23</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-11-01 10:57:07" itemprop="dateModified" datetime="2018-11-01T10:57:07-07:00">2018-11-01</time>
+              
             
           </span>
 
@@ -340,14 +397,10 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/个人/" itemprop="url" rel="index">
-                    <span itemprop="name">个人</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/个人/" itemprop="url" rel="index"><span itemprop="name">个人</span></a></span>
 
                 
                 
@@ -383,22 +436,18 @@
       
         
           
-          
-这里记录了一些日常见闻和碎碎念
+            <blockquote>
+<p>这里记录了一些日常见闻和碎碎念</p>
+</blockquote>
+<p>11/1/2018 做了美国携程Expedia的OA, 三道Easy的题：1.Alice&amp;Bob的傻逼游戏 2.数组去重（sum minimum约束） 3.Music Dilemma. 无感，过。</p>
 
-11/1/2018 做了美国携程Expedia的OA, 三道Easy的题：1.Alice&amp;Bob的傻逼游戏 2.数组去重（sum minimum约束） 3.Music Dilemma. 无感，过。
-
           
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2015/11/23/一点拙见/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
@@ -435,6 +484,8 @@
 
   
   
+  
+
   
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -446,7 +497,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xiaode">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="天堂有路你不走，学海无涯苦作舟">
       <meta itemprop="image" content="/uploads/avatar.jpeg">
     </span>
 
@@ -461,25 +512,52 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2015/11/23/关于SDN和NFV/" itemprop="url">关于SDN和NFV</a></h1>
+                <a class="post-title-link" href="/2015/11/23/关于SDN和NFV/" itemprop="url">
+                  关于SDN和NFV
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-11-23T19:48:16-08:00">
-                2015-11-23
-              </time>
+
+              
+                
+              
+
+              <time title="Created: 2015-11-23 19:48:16" itemprop="dateCreated datePublished" datetime="2015-11-23T19:48:16-08:00">2015-11-23</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2016-01-07 01:10:04" itemprop="dateModified" datetime="2016-01-07T01:10:04-08:00">2016-01-07</time>
+              
             
           </span>
 
@@ -492,14 +570,10 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/研究方向/" itemprop="url" rel="index">
-                    <span itemprop="name">研究方向</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/研究方向/" itemprop="url" rel="index"><span itemprop="name">研究方向</span></a></span>
 
                 
                 
@@ -535,18 +609,14 @@
       
         
           
+            
           
-          
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2015/11/23/关于SDN和NFV/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
@@ -583,6 +653,8 @@
 
   
   
+  
+
   
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -594,7 +666,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xiaode">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="天堂有路你不走，学海无涯苦作舟">
       <meta itemprop="image" content="/uploads/avatar.jpeg">
     </span>
 
@@ -609,25 +681,52 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2015/11/23/Numa问题和ccNuma结构/" itemprop="url">Numa问题和ccNuma结构</a></h1>
+                <a class="post-title-link" href="/2015/11/23/Numa问题和ccNuma结构/" itemprop="url">
+                  Numa问题和ccNuma结构
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-11-23T19:46:55-08:00">
-                2015-11-23
-              </time>
+
+              
+                
+              
+
+              <time title="Created: 2015-11-23 19:46:55" itemprop="dateCreated datePublished" datetime="2015-11-23T19:46:55-08:00">2015-11-23</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2016-01-07 01:07:37" itemprop="dateModified" datetime="2016-01-07T01:07:37-08:00">2016-01-07</time>
+              
             
           </span>
 
@@ -640,14 +739,10 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/研究方向/" itemprop="url" rel="index">
-                    <span itemprop="name">研究方向</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/研究方向/" itemprop="url" rel="index"><span itemprop="name">研究方向</span></a></span>
 
                 
                 
@@ -683,18 +778,14 @@
       
         
           
+            
           
-          
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2015/11/23/Numa问题和ccNuma结构/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
@@ -731,6 +822,8 @@
 
   
   
+  
+
   
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -742,7 +835,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xiaode">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="天堂有路你不走，学海无涯苦作舟">
       <meta itemprop="image" content="/uploads/avatar.jpeg">
     </span>
 
@@ -757,25 +850,52 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2015/10/26/Xen虚拟化基础/" itemprop="url">Xen与半虚拟化技术</a></h1>
+                <a class="post-title-link" href="/2015/10/26/Xen虚拟化基础/" itemprop="url">
+                  Xen与半虚拟化技术
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-10-26T13:22:23-07:00">
-                2015-10-26
-              </time>
+
+              
+                
+              
+
+              <time title="Created: 2015-10-26 13:22:23" itemprop="dateCreated datePublished" datetime="2015-10-26T13:22:23-07:00">2015-10-26</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2015-10-28 01:56:26" itemprop="dateModified" datetime="2015-10-28T01:56:26-07:00">2015-10-28</time>
+              
             
           </span>
 
@@ -788,14 +908,10 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/研究方向/" itemprop="url" rel="index">
-                    <span itemprop="name">研究方向</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/研究方向/" itemprop="url" rel="index"><span itemprop="name">研究方向</span></a></span>
 
                 
                 
@@ -831,18 +947,139 @@
       
         
           
-          虚拟机概况首先从虚拟机说起，虚拟机技术最早由IBM于上世纪六七十年代提出，被定义为硬件设备的软件模拟实现。在那个年代，计算机的硬件成本相当大，为了能够提高计算机的利用率，于是提出了这样一种技术：将一台机器通过软件虚拟成多台机器从而为不同的应用提供服务。如今虚拟机技术应用广泛，可租用的服务器都是使用了
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2015/10/26/Xen虚拟化基础/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <h2 id="虚拟机概况"><a href="#虚拟机概况" class="headerlink" title="虚拟机概况"></a>虚拟机概况</h2><p>首先从虚拟机说起，虚拟机技术最早由IBM于上世纪六七十年代提出，被定义为硬件设备的软件模拟实现。在那个年代，计算机的硬件成本相当大，为了能够提高计算机的利用率，于是提出了这样一种技术：将一台机器通过软件虚拟成多台机器从而为不同的应用提供服务。如今虚拟机技术应用广泛，可租用的服务器都是使用了不同方案的虚拟化技术。</p>
+<p>我们通常提到的虚拟机都是系统虚拟机，如IBM VM/370、VMware ESX Server、Xen。系统虚拟机在二进制指令集系统结构（ISA）的层次上提供一个完整的系统级环境。因此，用户会觉得自己在使用整个计算机。一台运行多个虚拟机的计算机可以支持多个不同的操作系统。在一个传统的平台上，一个单独的操作系统拥有所有的硬件资源，但是通过使用虚拟机，多个操作系统共享硬件资源。</p>
+<h2 id="虚拟机简介"><a href="#虚拟机简介" class="headerlink" title="虚拟机简介"></a>虚拟机简介</h2><p>下图是典型的虚拟机层次结构。它比传统的平台多了一个虚拟机监视器（Virtual Machine Monitor），虚拟机监视器VMM处于硬件和虚拟机层之间。虚拟机监视器VMM负责Host和Guest之间的通信。在虚拟机系统中，对于上层应用，虚拟机就是真实的计算机。</p>
+<p><img src="http://7xlkqd.com1.z0.glb.clouddn.com/Xen20150701235534171.png" alt=""></p>
+<p>虚拟化分类<br>虚拟化技术可以分为完全虚拟化、半虚拟化。</p>
+<ul>
+<li>完全虚拟化</li>
+</ul>
+<p>即所抽象的VM具有完全的物理特性，OS在其上运行不需要任何修改，移植性非常好。但是缺点是效率不高。典型的有VMware，Virtualbox，Virtual PC，KVM-x86。</p>
+<ul>
+<li>半虚拟化</li>
+</ul>
+<p>起初是为了解决x86体系结构上完全虚拟化的困难，它需要修改OS，工作效率相对完全虚拟化要高很多。典型的有Xen、KVM-PowerPC。</p>
+<h2 id="半虚拟化技术产生的原因"><a href="#半虚拟化技术产生的原因" class="headerlink" title="半虚拟化技术产生的原因"></a>半虚拟化技术产生的原因</h2><p>x86体系是导致半虚拟化技术产生的重要原因。因为x86指令系统中存在部分敏感指令不是特权指令。什么意思呢？下面来从特权指令和敏感指令的角度进行解释：</p>
+<p><img src="http://7xlkqd.com1.z0.glb.clouddn.com/Xen20150702001502001.png" alt=""></p>
+<ul>
+<li>特权指令</li>
+</ul>
+<p>特权指令是一些操作和管理关键系统资源的指令，这些指令只有在最高特权级上才能够运行。如果在非最高特权级上运行，特权指令会引发一个异常，处理器会陷入到最高特权级，然后由系统软件处理。但是并不是所有的特权指令都会引发异常（x86指令系统中的特权指令会有这种问题），最关键的是这些特权指令在不同的特权级上运行的结果会不一样，甚至可能会被直接忽略。</p>
+<ul>
+<li>敏感指令</li>
+</ul>
+<p>传统的机器只有特权指令和普通指令两种概念，而在有虚拟化的机器上则还有一个独特的概念：敏感指令。敏感指令是指在虚拟化时必须要在最高特权级运行的指令。在RISC体系中，所有的特权指令都是敏感指令，因此可以支持完全虚拟化。但是在x86体系的虚拟化中，部分敏感指令并不是特权指令，那么这些非特权指令的敏感指令在系统运行过程中就不会引发异常，也就无法被捕获并在最高特权级执行。而这些敏感指令在非最高特权级下运行和在最高特权级下运行会有不同的结果，这对于一个要求性能可靠的计算机不能绝对容忍的。因此，半虚拟化技术，以Xen为先例，主要解决的就是这个问题——如何捕获非特权指令的敏感指令。</p>
+<ul>
+<li>特权级</li>
+</ul>
+<p>上面多次提到了特权级等概念，下面来进行简要的解释。</p>
+<p>在操作系统中，我们经常看到用户态、内核态这些概念，而事实上这两个态的实现就是通过特权级来实现的。如下图所示，现在大部分的计算机体系结构都有两个或两个以上的特权级别，用来分隔内核和应用软件。以x86为例，它拥有4个特权级别（0 to 3），一般用ring来表示。Ring后面的数字越小特权级别越小。在未虚拟化的机器上，Ring0运行操作系统，Ring1、Ring2支持设备驱动，Ring3跑应用程序。而现在的x86处理器中，64位架构已经非常普遍，64位CPU因为必须支持页表模式，所以只需要两个特权级别：ring0、ring3。</p>
+<p><img src="http://7xlkqd.com1.z0.glb.clouddn.com/Xen20150702001359236.png" alt=""></p>
+<h2 id="Xen虚拟化技术"><a href="#Xen虚拟化技术" class="headerlink" title="Xen虚拟化技术"></a>Xen虚拟化技术</h2><p>Xen的整体框架如下图所示。它分为三层，从底层到上层依次是物理层、VMM、Domain。VMM层也就是Xen Hypervisor，负责为上层操作系统提供虚拟化的硬件资源，负责管理和分配这些资源，并确保上层虚拟机（也称为虚拟域Domain）之间的相互隔离。Xen采用混合模式，因而设定了一个特权域用以辅助Xen管理其他的域，并提供虚拟资源服务，该特权域称为Domain0，而其余的域则称为DomainU。</p>
+<p><img src="http://7xlkqd.com1.z0.glb.clouddn.com/Xen20150702001856097.png" alt=""></p>
+<p>下面按层次来介绍Xen的结构。底层硬件不进行过多赘述。</p>
+<h3 id="VMM层"><a href="#VMM层" class="headerlink" title="VMM层"></a>VMM层</h3><ul>
+<li>控制接口</li>
+</ul>
+<p>控制接口也称为特权控制接口，仅能被Dom0使用，用于帮助Domain0控制管理其他Domain。控制接口提供的具体功能包括Domain的创建。控制接口的具体功能包括Domain的创建、销毁、暂停、恢复及迁移，对其他Domain的CPU调度，内存分配以及设备访问等。</p>
+<ul>
+<li>安全硬件接口</li>
+</ul>
+<p>提供除虚拟CPU、MMU之外的所有硬件虚拟工作，包括DMA/IO、驱动程序、虚拟的PCI地址配置、虚拟硬件中断等。该接口只能被具有原生设备驱动的Domain使用，而对于其他Domain仅通过设备通道提供虚拟硬件服务。</p>
+<ul>
+<li>VCPU</li>
+</ul>
+<p>Xen为每个Domain建立了VCPU结构，用以接收Guest OS中传递的指令，其中大部分的指令被VCPU直接提交到屋里CPU执行，而对于特权指令则需要经过确认之后交由Xen代为执行。</p>
+<ul>
+<li>虚拟MMU</li>
+</ul>
+<p>用于帮助Guest OS完成虚拟地址到物理地址的转换。Xen系统中增加了客户物理地址层，因而地址由原来的二层结构变为三层结构。Xen通过虚拟MMU仍能使用硬件MMU来完成地址转换。</p>
+<ul>
+<li>事件通道</li>
+</ul>
+<p>是用于Domain和Xen之间、Domain相互之间的一种异步事件通知机制，用于处理Guest OS的虚拟中断、物理中断以及Domain之间的通信。事件通道是Xen系统的基本机制，与超级调用一起在Xen各个虚拟子系统中起到重要的作用。</p>
+<h3 id="虚拟域层"><a href="#虚拟域层" class="headerlink" title="虚拟域层"></a>虚拟域层</h3><p>在硬件虚拟化技术诞生之后，从Xen3.0开始就能够支持不修改内核的Guest OS。运行未修改内核的操作系统的Domain称为硬件虚拟机（HVM）。现在，运行在Xen上的虚拟域包括四种类型：特权域（Domain0）、独立设备驱动域（IDD）、硬件虚拟域、非特权域（DomainU）。</p>
+<ul>
+<li>特权域</li>
+</ul>
+<p>上述已经提到过了特权域，特权域Domain0在整个Xen系统中是独一无二的。Domain0随着Xen的启动而被创建，是第一个被创建的Domain。Domain0拥有原生设备驱动，具有直接访问硬件设备的特权，并通过和Xen提供的控制接口进行交互来控制和管理其他虚拟域。</p>
+<p>运行在Dom0中的控制面板能够控制其它Domain的创建、销毁、配置和迁移;设备管理器则负责设备驱动的初始化和管理设备的访问，在访问设备过程中， 与直接模拟真实的物理设备不同，Xen向其他Domain提供的是抽象的设备，例如，其它Domain通过网卡的前端驱动所看到的网卡设备仅仅是一个通用 的网卡类设备，而非具体的某一个网卡，在接收到其它Domain通过网卡的前端驱动发送的I/O请求后，Dom0则利用网卡的后端驱动来确定具体的网卡， 并交由原生驱动完成I/O请求。</p>
+<ul>
+<li>独立设备驱动域（IDD）</li>
+</ul>
+<p>在最简单的Xen结构中，只存在一个特权域Dom0,这时Xen就好像一个硬件设备抽象层，将复杂的x86架构隐藏起来，所有的硬件设备被Dom0的 Guest OS控制，但这种结构存在很大的问题，若一个特殊设备驱动包含了一些漏洞，那它就有可能摧毁整个Dom0的内核，从而导致整个系统崩溃，为此，将设备驱动 由Dom0移入另一个虚拟域中，一方面可降低Dom0的运行负载，另一个方面杨也可减低系统的风险，一旦虚拟域由于使用设备驱动出面故障，Dom0就可以 很方便地重启该虚拟域，这些经过Dom0授权、能够使用特定设备驱动的虚拟域称为独立设备驱动域（Isolated Driver Domain,IDD）。可以避免由于DMA需求和I/O中断对Guest OS造成的影响。</p>
+<ul>
+<li>硬件虚拟域（HVM）</li>
+</ul>
+<p>Xen3.0支持运行未修改内核的Guest OS，但这需要使用特殊硬件技术的支技，例如Intel的VT-x或AMD的ADM-V技术。运行这些Guest OS的虚拟域称为硬件虚拟域;由于Guest OS没有修改内核，因此Guest OS不能直接支持Xen在半虚拟化下采用的分离设备驱动模型，这意味着Xen必须模拟出Guest OS能够支持的环境。若HVM中的Guest OS要使用Xen的半虚拟化技术，则必须先通过执行CPUID指令支访问一个特殊的虚拟寄存器和超级调用页面，然后同其他Domain中的Guest OS一样，通过修改超级调用页表来发布新的超级调用。</p>
+<ul>
+<li>非特权域（DomainU）</li>
+</ul>
+<p>严格来讲，DomU是指除了Dom0之外的Domain，但由于IDD经过Dom0授权后能够使用设备驱动直接访问物理设备，因而IDD也属于“特权 域”，因此，DomU是除了Dom0和IDD之外的Domain，包括前面提到的HVM;相对Dom0 来说，DomU受到了许多限制，首当其冲的是对硬件访问，无论是HVM还是一般的DomU都不能直接访问物理设备，必须借助于Dom0或IDD才能完成。</p>
+<h3 id="虚拟域内部功能模块"><a href="#虚拟域内部功能模块" class="headerlink" title="虚拟域内部功能模块"></a>虚拟域内部功能模块</h3><ul>
+<li>设备管理器</li>
+</ul>
+<p>设备管理器位于Domian0和IDD（Independent Device Domain）中，可作为系统BIOS的扩展，用于向所有的设备提供通用的管理接口，并负责在Domain启动时加载特定的设备驱动、建立管理设备通道、提供硬件配置接口并处理设备访问的错误。</p>
+<ul>
+<li>控制面板</li>
+</ul>
+<p>控制面板是运行在Dom0中的一系列软件集合，用于同Xen中的控制接口交互，完成对整个Xen系统的管理工作，相当于系统的总控制台。它能够控制其他Domain的创建、销毁、配置和迁移。</p>
+<ul>
+<li>原生设备驱动</li>
+</ul>
+<p>原生设备驱动是指原来操作系统中所使用的普通设备驱动。在Xen系统中，只有经过授权的Domain才有权使用原生的设备驱动访问真实的硬件设备。通过支持原生设备驱动，Xen能够最大限度地利用操作系统中个设备驱动，减少Xen的开发难度，提高了效率，通过安全硬件接口，这些原生设备驱动能够限定在特定的I/O空间中，为Domain提供设备访问服务。</p>
+<ul>
+<li>前端/后端设备驱动</li>
+</ul>
+<p>前端/后端设备驱动共同组成了Xen的分离设备驱动模型，其负责完成Domain对硬件设备的访问。其中，位于其它Domain内的前端设备驱动将I/O将I/O请求发送给Domain0（或IDD）内的后端设备驱动，后端设备驱动接收I/O请求，并对其进行安全检查，然后将通过安全检查的I/O请求交由原生设备驱动处理。</p>
+<ul>
+<li>设备模型</li>
+</ul>
+<p>设备模型是在Xen支持硬件虚拟化技术后被引入Domain0的，它主要用来处理硬件虚拟机（即VT技术使Guest OS不用修改）Guest OS对设备的访问，设备模型访问的模型主要基于QEMU。</p>
+<h2 id="Xen虚拟化技术-1"><a href="#Xen虚拟化技术-1" class="headerlink" title="Xen虚拟化技术"></a>Xen虚拟化技术</h2><p>Xen从系统的三个方面进行虚拟化：CPU虚拟化、内存虚拟化、I/O虚拟化</p>
+<h3 id="CPU虚拟化"><a href="#CPU虚拟化" class="headerlink" title="CPU虚拟化"></a>CPU虚拟化</h3><ul>
+<li>（1)半虚拟化</li>
+</ul>
+<p>前面提到x86体系结构中，部分敏感指令不是特权指令，这些指令不能自动产生异常，因此想要系统正常运行就必须要捕获这些指令。于是Xen采用修改Guest OS内核的方法对这些有缺陷的指令进行替换。在这种模式下，Xen位于操作系统和硬件之间，为其上运行的Guest OS内核提供虚拟化的硬件环境。这时候，Xen运行在最高特权级的ring0，操作系统被特权解除，运行在ring1，ring3运行应用程序，构成虚拟机系统中的“0/1/3模型”。当Xen占据最高特权级时，在Xen下运行的Guest OS内核将无法运行某些特权指令，并将产生一般保护错误，Xen必须通过超级调用向提供执行这些特权指令的接口。下图是虚拟化前后的特权级的变化。</p>
+<p><img src="http://7xlkqd.com1.z0.glb.clouddn.com/Xen20150702003604161.png" alt=""></p>
+<ul>
+<li>（2）硬件虚拟化</li>
+</ul>
+<p>上述的半虚拟化方法是在最开始没有硬件虚拟化技术支持的情况下的一种解决方案。不过为了克服半虚拟化带来的不便，如：修改Guest OS、性能开销。现在Intel、AMD都在硬件层面上支持虚拟化了，就是我们熟知的Intel VT、AMD VT等技术。在硬件虚拟化技术的支持下，那些原本有缺陷的指令能够直接通过硬件被捕获，也就不需要修改Guest OS内核，从而提高了系统的可移植性。</p>
+<h3 id="内存虚拟化"><a href="#内存虚拟化" class="headerlink" title="内存虚拟化"></a>内存虚拟化</h3><p>在半虚拟化模式下，Xen的内存虚拟化通过内存分段保护机制，使得Xen和Guest OS共存于同一个内存地址空间中，简化了Xen对Domain内存的分配和管理工作，同时利用内存分页机制，Xen可保证各Domain在内存上的有效隔离（这是利用了分页机制隔离进程的思想）。下图就是Xen和Guest OS共存的内存地址空间。</p>
+<p><img src="http://7xlkqd.com1.z0.glb.clouddn.com/Xen20150702003453339.png" alt=""></p>
+<p>Xen需要确保任意两个非特权Domain不会访问到同一内存区虚拟域，因为每一页或页目录的更新必须经过确认，以保证每个Domain只能控制自己的页表。通过修改Guest OS内核，Xen让Guest OS也参与到内存管理的工作中，这样Xen可以更多关注于内存虚拟化中更重要的内存隔离工作，同时也可让硬件MMU在Guest OS的三层地址转换中发挥作用。</p>
+<p>上述多次提到虚拟地址到物理地址的三层地址转换，到底这是一种什么样的机制呢？</p>
+<p>在传统的系统中，MMU完成虚拟地址到物理地址的转换。操作系统运行需要一段连续的物理地址，用它来映射虚拟地址。但是在Xen中，多个Guest共享整个机器的物理地址。因此，Xen需要让所有操作系统看到一个属于它们自己的连续的物理地址。于是Xen在虚拟地址和机器地址之间引入一层中间地址——客户物理地址。这让Guest OS感觉自己的物理地址是从0开始的连续的地址，然而Xen将这层中间地址真正映射到机器地址却可以是不连续的。这样就保证了所有的物理内存可以被分配给不同的Guest OS了。下图就是三层地址转换示图。</p>
+<p><img src="http://7xlkqd.com1.z0.glb.clouddn.com/Xen20150702003737154.png" alt=""></p>
+<p>在内存虚拟化中，还有一个非常重要的一环就是内存的分配。在物理内存的管理中，Xen引入了VMware最先采用的气球驱动模型来调节分配给各Domain的物理内存。<br>气球驱动可作为驱动程序运行在Guest OS（即Domain）中，Guest OS通过该驱动与Xen通信。当Domain需要更多内存时，将通过气球驱动向Xen提交内存申请请求，Xen可向气球驱动减压以便将将气球驱动所占用的部分空闲内存或通过气球驱动从其他Domain回收的内存分配给提交请求的Domain。如果Xen的可用空余内存过低，需要从某个Domain回收部分占用的内存，Xen可向气球驱动加压使气球膨胀，Guest<br> OS将回收页面、释放内存以便给本地气球分配足够的内存空间，然后气球驱动将分配到的页面传给Xen，Xen将这些空闲内存集中起来备用。相关的工作原理如下图所示。</p>
+<p><img src="http://7xlkqd.com1.z0.glb.clouddn.com/Xen20150702005258422.png" alt=""></p>
+<h3 id="I-O虚拟化"><a href="#I-O虚拟化" class="headerlink" title="I/O虚拟化"></a>I/O虚拟化</h3><p>在半虚拟化模式下，Xen采用了分离设备驱动模型来实现I/O的虚拟化。该模型将设备驱动划分为前端驱动程序、后端驱动程序和原生驱动三个部分，其中前端驱动在DomU中运行，而后端驱动和原生驱动在Dom0（IDD）中运行。前端驱动负责将Guest OS的I/O请求传递到Dom0（IDD）中的后端驱动，后端驱动对I/O请求解析并映射到物理设备，提交给相应的设备驱动程序控制硬件完成I/O操作。</p>
+<p>后端驱动检查接收到的I/O请求的有效性，并进行虚拟设备地址到物理设备地址的转换。转换之后，后端驱动将通过Dom0（IDD）中Guest OS提供I/O接口，间接地控制原生设备驱动完成提交的请求。</p>
+<p>前端驱动和后端驱动之间I/O请求的传递是通过Xen内部的一个环形队列（I/O环）来实现的，其结构如下图所示。I/O环实际上是Xen提供的一块供DomU和Dom0（IDD）访问的共享内存。</p>
+<p><img src="http://7xlkqd.com1.z0.glb.clouddn.com/Xen20150702005518701.png" alt=""></p>
+<p>针对大量DMA数据在DomU和Dom0（IDD）之间的高效传递需求，Xen提供了授权表（Grant Table）机制。每个Domain都有一个授权表，用以指明其内部哪些页面可以被哪些Domain所访问。而Xen内部存在一个活动授权表（Active Grant Table）用于缓存来自各Domain授权表的活动表项内容。</p>
+<p>当DomU中的Guest OS需要进行DMA操作时，前端驱动会为对应的数据页面生成一个授权描述（Grant Reference, GR）并将授权描述和请求一起放入I/O环。当Dom0（IDD）从I/O环中取出请求时，将根据授权描述，向Xen请求锁定该页面。Xen接收到请求后，在活动授权表或Guest OS的授权表中确认是否已授权特权域访问该页面，通过检查后，表明该页面可安全地进行DMA操作。Dom0（IDD）在接收到Xen的响应后即可开始向真实硬件发送DMA请求了。</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>事实上，计算机领域中遇到的一些问题，无论是软件还是硬件都可以通过添加一个抽象层来解决，本文中的Xen也是同样如此。</p>
+<p><strong>参考文献</strong></p>
+<p>[1]Xen and the Art of Virtualization. Paul Barham, Boris Dragovic, Keir Fraser, Steven Hand, Tim Harris, Alex Ho, Rolf Neugebauer, Ian Pratt, Andrew Warfield.</p>
+<p>[2]Computer Organization and Design The Hardware / Software Interface. David A.Patterson, John L.Hennessy.</p>
+<p>[3]<a href="http://blog.csdn.net/pi9nc/article/details/11219739" target="_blank" rel="external">http://blog.csdn.net/pi9nc/article/details/11219739</a></p>
+<p>[4]<a href="http://blog.csdn.net/dbanote/article/details/8938106#" target="_blank" rel="external">http://blog.csdn.net/dbanote/article/details/8938106#</a></p>
+<p>[5]<a href="http://blog.csdn.net/defeattroy/article/details/8802101" target="_blank" rel="external">http://blog.csdn.net/defeattroy/article/details/8802101</a></p>
+<p>[6]<a href="http://www.mcplive.cn/index.php/article/index/id/5788/page/5" target="_blank" rel="external">http://www.mcplive.cn/index.php/article/index/id/5788/page/5</a></p>
+<p>[7]<a href="http://book.51cto.com/art/201003/188412.htm" target="_blank" rel="external">http://book.51cto.com/art/201003/188412.htm</a></p>
+<p>[8]<a href="http://kb.cnblogs.com/page/172315/" target="_blank" rel="external">http://kb.cnblogs.com/page/172315/</a></p>
+<p>[9]<a href="http://www.docin.com/p-735988739.html" target="_blank" rel="external">http://www.docin.com/p-735988739.html</a></p>
+
+          
         
       
     </div>
+
+    
+
     
     
     
@@ -879,6 +1116,8 @@
 
   
   
+  
+
   
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -890,7 +1129,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xiaode">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="天堂有路你不走，学海无涯苦作舟">
       <meta itemprop="image" content="/uploads/avatar.jpeg">
     </span>
 
@@ -905,25 +1144,40 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2015/10/26/CAP理论/" itemprop="url">CAP理论</a></h1>
+                <a class="post-title-link" href="/2015/10/26/CAP理论/" itemprop="url">
+                  CAP理论
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-10-26T09:47:38-07:00">
-                2015-10-26
-              </time>
+
+              
+                
+              
+
+              <time title="Created: 2015-10-26 09:47:38 / Modified: 06:07:27" itemprop="dateCreated datePublished" datetime="2015-10-26T09:47:38-07:00">2015-10-26</time>
             
 
             
+              
 
+              
             
           </span>
 
@@ -936,14 +1190,10 @@
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/研究方向/" itemprop="url" rel="index">
-                    <span itemprop="name">研究方向</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/研究方向/" itemprop="url" rel="index"><span itemprop="name">研究方向</span></a></span>
 
                 
                 
@@ -979,19 +1229,61 @@
       
         
           
-          CAP理论（转）
-CAP理论在互联网界有着广泛的知名度，知识稍微宽泛一点的工程师都会把其作为衡量系统设计的准则。大家都非常清楚地理解了CAP：任何分布式系统在可用性、一致性、分区容错性方面，不能兼得，最多只能得其二，因此，任何分布式系统的设计只是在三者中的不同取舍而已。事实上，让人吃惊的是，CAP在
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2015/10/26/CAP理论/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <h1 id="CAP理论（转）"><a href="#CAP理论（转）" class="headerlink" title="CAP理论（转）"></a>CAP理论（转）</h1><hr>
+<p>CAP理论在互联网界有着广泛的知名度，知识稍微宽泛一点的工程师都会把其作为衡量系统设计的准则。大家都非常清楚地理解了CAP：任何分布式系统在可用性、一致性、分区容错性方面，不能兼得，最多只能得其二，因此，任何分布式系统的设计只是在三者中的不同取舍而已。<br>事实上，让人吃惊的是，CAP在国外的影响力完全不如所想，相反还伴随着诸多的争论。下面我们系统地阐述一下CAP的来龙去脉。</p>
+<hr>
+<h2 id="CAP的历史"><a href="#CAP的历史" class="headerlink" title="CAP的历史"></a>CAP的历史</h2><p>1985年Lynch证明了异步通信中不存在任何一致性的分布式算法（FLP Impossibility）的同时，人们就开始寻找分布式系统设计的各种因素。一致性算法既然不存在，但若能找到一些设计因素，并进行适当的取舍以最大限度满足实现系统需求成为当时的重要议题。比如，在CAP之前研究者就已经发现低延迟和顺序一致性不可能同时被满足【8】。<br>2000年，Eric Brewer教授在PODC的研讨会上提出了一个猜想：一致性、可用性和分区容错性三者无法在分布式系统中被同时满足，并且最多只能满足其中两个！</p>
+<p>这个猜想首次把一致性、可用性和分区容错三个因素提炼出来作为系统设计的重要特征，断言用此三者可以划分所有的分布式系统，并指明这三个特征之间的不可能性关系。Brewer猜想比单纯的“低延迟和顺序一致性不能被同时满足”的结论更具体，对实际系统的构建也更具有可操作性！</p>
+<p>Brewer教授当时想象的分布式场景是webservice，一组websevrice后台运行着众多的server，对service的读写会反应到后台的server集群，并对CAP进行了定义：</p>
+<ul>
+<li>C（一致性）：所有的节点上的数据时刻保持同步</li>
+<li>A（可用性）：每个请求都能接受到一个响应，无论响应成功或失败</li>
+<li>P（分区容错）：系统应该能持续提供服务，即使系统内部有消息丢失（分区）</li>
+</ul>
+<p>高可用、数据一致是很多系统设计的目标，但是分区又是不可避免的事情：</p>
+<ul>
+<li>CA without P：如果不要求P（不允许分区），则C（强一致性）和A（可用性）是可以保证的。但其实分区不是你想</li>
+</ul>
+<p>不想的问题，而是始终会存在，因此CA的系统更多的是允许分区后各子系统依然保持CA。</p>
+<ul>
+<li><p>CP without A：如果不要求A（可用），相当于每个请求都需要在Server之间强一致，而P（分区）会导致同步时间<br>无限延长，如此CP也是可以保证的。很多传统的数据库分布式事务都属于这种模式。</p>
+</li>
+<li><p>AP wihtout C：要高可用并允许分区，则需放弃一致性。一旦分区发生，节点之间可能会失去联系，为了高可用，每个节点只能用本地数据提供服务，而这样会导致全局数据的不一致性。现在众多的NoSQL都属于此类。</p>
+</li>
+</ul>
+<p>CAP的出现仿佛是一盏明灯，它揭露了分布式系统的本质，并给出了设计的准则，而这正是1985年以来人们正在寻找的东西！所以CAP在当时的影响力是非常大的！</p>
+<h2 id="CAP被上升为定理"><a href="#CAP被上升为定理" class="headerlink" title="CAP被上升为定理"></a>CAP被上升为定理</h2><p>2002年，Lynch与其他人证明了Brewer猜想，从而把CAP上升为一个定理【2】。但是，她只是证明了CAP三者不可能同时满足，并没有证明任意二者都可满足的问题，所以，该证明被认为是一个收窄的结果。<br>Lynch的证明相对比较简单：采用反正法，如果三者可同时满足，则因为允许P的存在，一定存在Server之间的丢包，如此则不能保证C，证明简洁而严谨。<br>在该证明中，对CAP的定义进行了更明确的声明【2】：</p>
+<ul>
+<li>C：一致性被称为原子对象，任何的读写都应该看起来是“原子“的，或串行的。写后面的读一定能读到前面写的内容。所有的读写请求都好像被全局排序。</li>
+<li>A：对任何非失败节点都应该在有限时间内给出请求的回应。（请求的可终止性）</li>
+<li>P：允许节点之间丢失任意多的消息，当网络分区发生时，节点之间的消息可能会完全丢失</li>
+</ul>
+<p>该定义比Brewer提出的概念清晰了很多，也显得更加正式化！</p>
+<h2 id="前所未有的质疑"><a href="#前所未有的质疑" class="headerlink" title="前所未有的质疑"></a>前所未有的质疑</h2><p>当国内工程师对CAP痴迷的时候，国外的工程师和研究者对CAP提出了各种质疑，纷纷有用反例证明着CAP在各种场合不适用性，同时挑战着Lynch的证明结果！</p>
+<p>纵观这些质疑，基本都是拿着一个非常具体的系统，用CAP的理论去套，最后发现要么CAP不能Cover所有的场景，要么是CAP的定义非常模糊，导致自相矛盾！一句话，把CAP接地气是非常困难的！<br>你是否看了CAP的概念定义后还是感觉很模糊？如果是，你并不孤独，有很多人都是如此！<br>CAP没有考虑不同的基础架构、不同的应用场景、不同的网络基础和用户需求，而C、A、P在这些不同场景中的含义可能完全不同，这种无视差异化的定义导致了非常大的概念模糊，同时也变成CAP被质疑的源头！</p>
+<h3 id="质疑1：概念混乱，废话一堆，不能作为定理"><a href="#质疑1：概念混乱，废话一堆，不能作为定理" class="headerlink" title="质疑1：概念混乱，废话一堆，不能作为定理"></a>质疑1：概念混乱，废话一堆，不能作为定理</h3><p>在论文【4】中，作者对CAP发起了强烈的挑战，强烈谴责了CAP模糊不一致的概念：<br>在CA中的C代表的是本地一致性；CP中的代表的是全局一致性，AP中直接没有C；这些C的含义在不同的场景根本就不同<br>终端用户agent该不该引入到CAP中？CAP到底是说一个agent的多次更新，还是多个用户的一次更新？没有agent参与的系统谈什么一致性？<br>如果分区发生在系统内部（水平分区），对agent而已并没有影响；若分区发生在agent与系统间（垂直分区），这种情况对DNS系统架构的可用性根本没有任何影响；但对银行事务架构却有巨大影响。也就是说，可用性、分区容错，是两个相关切无法独立切分的概念<br>一句话：CAP说了一些永远不存在的废话！作为一个严格的数学定理，一定要概念清晰并且可自证明，CAP显然不具备这个条件，并声称“绝不承认其为一个定理”！<br>【4】的作者对相对论有相当的理解，从相对论来看，每个节点都只知道自己的结果，永远无法得知其他节点的情况，系统整体是否一致我怎么会知道？<br>并且作者对一致性、可用性归结为一个非常深刻的见解：一切都是时间视图！多长时间返回结果算可用？多长时间返回认为不可用？多长时间数据同步算一致？因此，一切的本质是时间！<br>根据时间特性和相对论，作者提出了一个独创的promise系统模型，每个节点都对自己的行为在有限时间内进行承诺，其他节点根据这个承诺和自己的状态决定本地如何处理。。。<br>作者还上传了自己的笔记拍照，我大体看了下，基本上是构建了一个基于时间同步的有限状态机，实际上Lynch早就证明，在同步环境的一致性是可以达到的！</p>
+<h3 id="质疑2：不适用于数据库事务架构"><a href="#质疑2：不适用于数据库事务架构" class="headerlink" title="质疑2：不适用于数据库事务架构"></a>质疑2：不适用于数据库事务架构</h3><p>【6】的作者，把详细地列举了分布式事务中可能的分区情况，比如说应用因为更新一些错误的数据而导致失败，此时无论使用什么样的高可用方案都是徒劳，因为数据发生了无法修正错误！作者还列举了其他一些情况，虽然分区发生但无法保持高可用。这就说明了CAP并不能不被用来完全解释数据库事务架构！<br>作者还建议，应该放弃分区容错，因为在局域网中分区很少发生；而在广域网中，有各种备选方案，导致实际上的分区也较少发生。</p>
+<h3 id="质疑3：应该构建不可变模型避免CAP的复杂性"><a href="#质疑3：应该构建不可变模型避免CAP的复杂性" class="headerlink" title="质疑3：应该构建不可变模型避免CAP的复杂性"></a>质疑3：应该构建不可变模型避免CAP的复杂性</h3><p>【7】的文章标题就是锤死CAP，作者对CAP的不屑溢于言表！<br>作者认为CAP的困境在于允许数据变更，每次变更就得数据同步，保持一致性，这样系统非常复杂。<br>他认为数据就是客观存在的，不可变，只能增、查。传统的CURD变为CR。这个概念非常类似Cassandra中的顺序写的概念，任何的变更都是增加记录。通过对所有记录的操作进行合并，从而得到最终记录。<br>因此，作者认为任何的数据模型都应该抽象为：Query=Function(all data)，任何的数据试图都是查询，查询是对全体数据施加了某个函数的结果。这个定义清晰简单，完全抛弃了CAP那些繁琐而又模糊的语义。因为每次操作都是队所有数据进行全局计算，也就没有了一致性问题！<br>有这样的系统吗？有，Hadoop便是！作者认为，Hadoop的HDFS只支持数据增加，而Mapeduce却进行全局计算，完美地符合了他对数据处理的期望！<br>Hadoop也存在某个节点数据丢失的问题，但随着流式计算，丢失的数据终究会随着系统的正常而被最终合并，因此数据最终是一致的。<br>Hadoop不能进行实时计算咋办？作者又构建了一套基于Cassandra和ElephantDB的实时数据处理系统。。。。搞的无比复杂！</p>
+<h3 id="质疑4：分区容错概念有误导"><a href="#质疑4：分区容错概念有误导" class="headerlink" title="质疑4：分区容错概念有误导"></a>质疑4：分区容错概念有误导</h3><p>【5】的作者主要质疑【6】，但比较清晰得揭露了CAP的概念之间的模糊。<br>【5】认为，可用性和一致性是分布式系统的属性，而分区却是网络的一个属性。不能再问题发生时是否选择要不要分区，而是应该在分区既定的情况下选择要一致性还是可用性。网络分区会发生在两种情况：<br>交换机失败，导致网络发生【6】中描述的情况，网络被分成几个子网<br>机器延迟或死机，导致某些server失去联系<br>【6】中所谓的分区就是情况1，每个独立的子网还能正常运作，作者认为这种分区条件非常苛刻，更倾向于认为这只是分区可用性的一种度量方式（发给每个子网的请求都有正确的response）。<br>而实际上，因为机器原因发生的分区的情况更常见一些，如果“很多”机器都发生故障，系统会因为一个“多数派”的丢失而导致不可用（比如，因为多数不存在，最新的读可能无法读取到上一次的写）。一句话：分区也同时蕴涵着不可用，这两个概念之间存在重叠。<br>作者认为，CAP比较合理的表达方式应该是：在一个允许网络发生故障的系统中，该选择一致性还是可用性？<br>当系统的机器数量持续增加时，一致性会加剧时延，维护一致性的成本会非常之高，因此我们基本就剩下一种选择：在允许网络失败的系统中，更多地是选择可用性。而Zookeeper、Hadoop之所以选择一致性，是因为这些系统多数是有在同一集群的少数节点构成！<br>【5】的作者其实间接地否认了“3个中同时满足2个”这样的误解，而是从更深层次探讨了CAP的本质，但并没有试图推翻CAP。</p>
+<h2 id="对质疑的回应"><a href="#对质疑的回应" class="headerlink" title="对质疑的回应"></a>对质疑的回应</h2><p>面对大量的质疑，Brewer和Lynch终于坐不住了，因此两人纷纷出来澄清：<br>Brewer于2012年重申【1】：<br>”3个中的2个“这个表述是不准确的，在某些分区极少发生的情况下，三者能顺畅地在一起配合<br>CAP不仅仅是发生在整个系统中，可能是发生在某个子系统或系统的某个阶段<br>该声明并不否认像质疑3那种三个因素协同工作的情况，并把CAP应用在一些更细粒度的场景中。</p>
+<p>Lynch也在10年后的2012年重写了论文【3】，该论文主要做了几件事：<br>把CAP理论的证明局限在原子读写的场景，并申明不支持数据库事务之类的场景<br>一致性场景不会引入用户agent，只是发生在后台集群之内<br>把分区容错归结为一个对网络环境的陈述，而非之前一个独立条件。这实际上就是更加明确了概念<br>引入了活性(liveness)和安全属性(safety)，在一个更抽象的概念下研究分布式系统，并认为CAP是活性与安全熟悉之间权衡的一个特例。其中的一致性属于liveness，可用性属于safety<br>把CAP的研究推到一个更广阔的空间：网络存在同步、部分同步；一致性性的结果也从仅存在一个到存在N个（部分一致）；引入了通信周期round，并引用了其他论文，给出了为了保证N个一致性结果，至少需要通信的round数。也介绍了其他人的一些成果，这些成果分别都对CAP的某一个方面做出了特殊的贡献！<br>其实Lynch的论文主要就是两件事：缩小CAP适用的定义，消除质疑的场景；展示了CAP在非单一一致性结果下的广阔的研究结果！并顺便暗示CAP定理依旧正确！<br>从此论文还是可以看出，Lynch的功力高出其他质疑者好多！</p>
+<h2 id="该如何看待CAP？"><a href="#该如何看待CAP？" class="headerlink" title="该如何看待CAP？"></a>该如何看待CAP？</h2><p>首先肯定的是，CAP并不适合再作为一个适应任何场景的定理，它的正确性更加适合基于原子读写的NoSQL场景。质疑虽然很多，但很多质疑者只是偷欢概念，并没有解决各个因素之间的取舍问题。而无论如何C、A、P这个三个概念始终存在任何分布式系统，只是不同的模型会对其有不同的呈现，可能某些场景对三者之间的关系敏感，而另一些不敏感。在所有的质疑当中，质疑4是分析的比较中肯的，其清晰的概念分析该让我们对CAP有更深入的理解！<br>就像Lynch所说，现在分布式系统有很多特性，比如扩展性、优雅降级等，虽然时间的发展，或许这些也会被纳入研究范畴，而作为开发者，这都是我们需要考虑的问题，而不仅是CAP三者！</p>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p>【1】<a href="http://en.wikipedia.org/wiki/Cap_theorem" target="_blank" rel="external">http://en.wikipedia.org/wiki/Cap_theorem</a></p>
+<p>【2】<a href="http://lpd.epfl.ch/sgilbert/pubs/BrewersConjecture-SigAct.pdf" target="_blank" rel="external">http://lpd.epfl.ch/sgilbert/pubs/BrewersConjecture-SigAct.pdf</a></p>
+<p>【3】<a href="http://groups.csail.mit.edu/tds/papers/Gilbert/Brewer2.pdf" target="_blank" rel="external">http://groups.csail.mit.edu/tds/papers/Gilbert/Brewer2.pdf</a></p>
+<p>【4】<a href="http://markburgess.org/blog_cap.html" target="_blank" rel="external">http://markburgess.org/blog_cap.html</a></p>
+<p>【5】<a href="http://blog.cloudera.com/blog/2010/04/cap-confusion-problems-with-partition-tolerance/" target="_blank" rel="external">http://blog.cloudera.com/blog/2010/04/cap-confusion-problems-with-partition-tolerance/</a></p>
+<p>【6】<a href="http://cacm.acm.org/blogs/blog-cacm/83396-errors-in-database-systems-eventual-consistency-and-the-cap-theorem/fulltext" target="_blank" rel="external">http://cacm.acm.org/blogs/blog-cacm/83396-errors-in-database-systems-eventual-consistency-and-the-cap-theorem/fulltext</a></p>
+<p>【7】<a href="http://nathanmarz.com/blog/how-to-beat-the-cap-theorem.html" target="_blank" rel="external">http://nathanmarz.com/blog/how-to-beat-the-cap-theorem.html</a></p>
+<p>【8】<a href="http://highscalability.com/blog/2011/11/23/paper-dont-settle-for-eventual-scalable-causal-consistency-f.html" target="_blank" rel="external">http://highscalability.com/blog/2011/11/23/paper-dont-settle-for-eventual-scalable-causal-consistency-f.html</a></p>
+
+          
         
       
     </div>
+
+    
+
     
     
     
@@ -1028,6 +1320,8 @@ CAP理论在互联网界有着广泛的知名度，知识稍微宽泛一点的�
 
   
   
+  
+
   
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -1039,7 +1333,7 @@ CAP理论在互联网界有着广泛的知名度，知识稍微宽泛一点的�
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xiaode">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="天堂有路你不走，学海无涯苦作舟">
       <meta itemprop="image" content="/uploads/avatar.jpeg">
     </span>
 
@@ -1054,25 +1348,52 @@ CAP理论在互联网界有着广泛的知名度，知识稍微宽泛一点的�
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2015/10/25/《思考的乐趣》读书笔记/" itemprop="url">《思考的乐趣》读书笔记</a></h1>
+                <a class="post-title-link" href="/2015/10/25/《思考的乐趣》读书笔记/" itemprop="url">
+                  《思考的乐趣》读书笔记
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-10-25T17:17:11-07:00">
-                2015-10-25
-              </time>
+
+              
+                
+              
+
+              <time title="Created: 2015-10-25 17:17:11" itemprop="dateCreated datePublished" datetime="2015-10-25T17:17:11-07:00">2015-10-25</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2015-10-27 07:44:24" itemprop="dateModified" datetime="2015-10-27T07:44:24-07:00">2015-10-27</time>
+              
             
           </span>
 
@@ -1085,14 +1406,10 @@ CAP理论在互联网界有着广泛的知名度，知识稍微宽泛一点的�
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/经验/" itemprop="url" rel="index">
-                    <span itemprop="name">经验</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/经验/" itemprop="url" rel="index"><span itemprop="name">经验</span></a></span>
 
                 
                 
@@ -1128,23 +1445,34 @@ CAP理论在互联网界有着广泛的知名度，知识稍微宽泛一点的�
       
         
           
-          《思考的乐趣》读书笔记matrix67数学笔记
+            <h1 id="《思考的乐趣》读书笔记"><a href="#《思考的乐趣》读书笔记" class="headerlink" title="《思考的乐趣》读书笔记"></a>《思考的乐趣》读书笔记</h1><p>matrix67数学笔记</p>
+<p><img src="http://7xlkqd.com1.z0.glb.clouddn.com/101358.jpg" alt="封面"></p>
+<hr>
+<h2 id="生活中的数学"><a href="#生活中的数学" class="headerlink" title="生活中的数学"></a>生活中的数学</h2><hr>
+<h3 id="1-概率论教你说谎"><a href="#1-概率论教你说谎" class="headerlink" title="1.概率论教你说谎"></a>1.概率论教你说谎</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">贝叶斯定理,即条件概率公式</div><div class="line"></div><div class="line">P(A|B) = P(B|A)·P(A)/P(B)</div></pre></td></tr></table></figure>
+<p>从说谎的现实情境下，P(A|B)可以看做是当事人提供了新的证据之后人们对原事件发生概率的看法。立业贝叶斯定理我们可以发现，P(A|B)与P(B|A)和P(A)成正比，与P(B)成反比。因此为了让人们相信事件A没发生，作为伪证的事件B一定要具有这样的性质：它本身很可能发生，但伴随事件A本身一起发生就很不可思议。为了使P(A|B)变得更低，我们要充分利用这个伪证：</p>
+<ul>
+<li>减小P(B|A)： 不要轻易拿出证据，故意做出没法拿出证据的样子，让人越来越坚信在事件A之后还能发生事件B的概率有多小</li>
+<li>增加P(B): 平时要做好铺垫</li>
+<li>减小P(A): 不要一副鬼鬼祟祟的样子，提高自己的人品，不至于让人一看见你就说是你干的</li>
+</ul>
+<hr>
+<h3 id="2-找东西背后的概率问题"><a href="#2-找东西背后的概率问题" class="headerlink" title="2.找东西背后的概率问题"></a>2.找东西背后的概率问题</h3><p>各种违反常理的错句图片和数学事实告诉我们，直觉并不可靠，其实这本身就是一种错觉，它让我们觉得直觉总是不可信。事实上，多数情况下，直觉都是可信的。举个栗子:</p>
+<p>书桌有8个抽屉，分别编号1~8。每次拿到一份未见，我会斗鸡把这份文件放到一个抽屉里，但是我有1/5的概率忘了把文件放到抽屉里，最后这个文件就丢了。现在我要找一份文件，我将按顺序打开每一个抽屉，直到找到这份文件为止。考虑下面三个问题：</p>
+<ul>
+<li>假如我打开了第一个抽屉，发现里面没有我要的文件。这份文件在其余7个抽屉里的概率是多少？</li>
+<li>假如我翻遍了前四个抽屉，里面都没有我要的文件，这份文件在剩下的4个抽屉里的概率是多少？</li>
+<li>假如我翻遍了前七个抽屉，里面都没有我要的文件，这份文件在最后一个抽屉里的概率是多少？</li>
+</ul>
+<p>事实上，三个概率值分别为7/9,2/3和1/3。有点出人意料，概率在不断减小。有点出人意料，但是不是没有道理。这郑反映了我们生活中的心理状态，与我们的直觉完全相符：假如我肯定我的文件没搞丢，每次发现抽屉里没有我要的东西时，我都更加相信它在剩下的抽屉里；但如果我的文件有可能搞丢了，每翻过一个抽屉但没有找到文件时，我都会更加慌张。我会越来越担心，感觉希望渺茫，直到最后一个抽屉。<br>有个非常巧妙地方法可以算出上面的三个概率：注意到，平均每10份文件就有两份被搞丢，我们可以在原来的8个抽屉中再虚拟出两个抽屉用来装丢了的文件，由此我们把题目等价的变为：随机把文件放在这十个抽屉里，但找文件事不允许打开最后两个抽屉，当我已经找过n个抽屉但仍没有找到我要的文件时，文件只能在剩下的10-n个抽屉里，但我只能打开剩下的8-n个抽屉，因此所求的概率是 8-n/10-n。当n=1、4、7时，这个概率分别为7/9,2/3和1/3.<br>如果把上式改写，我们可以得到 1-2/10-n,容易看出，当0&lt;=n&lt;=8时，它是一个递减函数。</p>
 
-
-生活中的数学
-1.概率论教你说谎123贝叶斯定理,即条件概率公式P(A|B) = P(B|A)·P(A)/P(B)
-从说谎的现实情境下，P(A|B)可以看做是当事人提供了新的证据之后人们对原事件发生概率的看法。立业贝叶斯定理我们可以发现，P(A|B
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2015/10/25/《思考的乐趣》读书笔记/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+          
         
       
     </div>
+
+    
+
     
     
     
@@ -1181,6 +1509,8 @@ CAP理论在互联网界有着广泛的知名度，知识稍微宽泛一点的�
 
   
   
+  
+
   
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -1192,7 +1522,7 @@ CAP理论在互联网界有着广泛的知名度，知识稍微宽泛一点的�
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xiaode">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="天堂有路你不走，学海无涯苦作舟">
       <meta itemprop="image" content="/uploads/avatar.jpeg">
     </span>
 
@@ -1207,25 +1537,52 @@ CAP理论在互联网界有着广泛的知名度，知识稍微宽泛一点的�
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2015/09/16/Cloud Computing/" itemprop="url">科研计划</a></h1>
+                <a class="post-title-link" href="/2015/09/16/Cloud Computing/" itemprop="url">
+                  科研计划
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-09-16T13:30:20-07:00">
-                2015-09-16
-              </time>
+
+              
+                
+              
+
+              <time title="Created: 2015-09-16 13:30:20" itemprop="dateCreated datePublished" datetime="2015-09-16T13:30:20-07:00">2015-09-16</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2016-01-07 01:08:50" itemprop="dateModified" datetime="2016-01-07T01:08:50-08:00">2016-01-07</time>
+              
             
           </span>
 
@@ -1238,14 +1595,10 @@ CAP理论在互联网界有着广泛的知名度，知识稍微宽泛一点的�
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/研究方向/" itemprop="url" rel="index">
-                    <span itemprop="name">研究方向</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/研究方向/" itemprop="url" rel="index"><span itemprop="name">研究方向</span></a></span>
 
                 
                 
@@ -1281,30 +1634,28 @@ CAP理论在互联网界有着广泛的知名度，知识稍微宽泛一点的�
       
         
           
-          背景知识：
-什么是SR-IOV？
+            <p>背景知识：</p>
+<p><a href="http://blog.scottlowe.org/2009/12/02/what-is-sr-iov/" target="_blank" rel="external">什么是SR-IOV？</a></p>
+<hr>
+<p><strong>TODO</strong>：</p>
+<ul>
+<li>补充了解基础知识</li>
+<li>了解研究领域的概况，并确立自己的研究方向</li>
+<li>充分了解并钻研，争取形成研究成果</li>
+</ul>
+<p><strong>Updated</strong>：</p>
+<ul>
+<li>2015/9/12 正式入学，开始研究僧生涯，方向：云计算与高性能网络</li>
+<li>2015/9/29 十一放假前更新一波，目前学术方向：I/O虚拟化性能优化</li>
+</ul>
 
-TODO：
-
-补充了解基础知识
-了解研究领域的概况，并确立自己的研究方向
-充分了解并钻研，争取形成研究成果
-
-Updated：
-
-2015/9/12 正式入学，开始研究僧生涯，方向：云计算与高性能网络
-2015/9/29 十一放假前更新一波，目前学术方向：I/O虚
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2015/09/16/Cloud Computing/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+          
         
       
     </div>
+
+    
+
     
     
     
@@ -1341,6 +1692,8 @@ Updated：
 
   
   
+  
+
   
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -1352,7 +1705,7 @@ Updated：
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xiaode">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="天堂有路你不走，学海无涯苦作舟">
       <meta itemprop="image" content="/uploads/avatar.jpeg">
     </span>
 
@@ -1367,25 +1720,52 @@ Updated：
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2015/09/07/如何搭建我的Hexo静态博客（Mac平台）/" itemprop="url">如何搭建我的Hexo静态博客（Mac平台）</a></h1>
+                <a class="post-title-link" href="/2015/09/07/如何搭建我的Hexo静态博客（Mac平台）/" itemprop="url">
+                  如何搭建我的Hexo静态博客（Mac平台）
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-09-07T19:25:41-07:00">
-                2015-09-07
-              </time>
+
+              
+                
+              
+
+              <time title="Created: 2015-09-07 19:25:41" itemprop="dateCreated datePublished" datetime="2015-09-07T19:25:41-07:00">2015-09-07</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2015-09-29 05:51:55" itemprop="dateModified" datetime="2015-09-29T05:51:55-07:00">2015-09-29</time>
+              
             
           </span>
 
@@ -1398,14 +1778,10 @@ Updated：
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/经验/" itemprop="url" rel="index">
-                    <span itemprop="name">经验</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/经验/" itemprop="url" rel="index"><span itemprop="name">经验</span></a></span>
 
                 
                 
@@ -1441,27 +1817,23 @@ Updated：
       
         
           
-          感觉别人写得很好了，不敢再献丑再写一遍，下面link里面附加了我搭博客时参考的资料，造福诸位。
-trouble shooting
-安装npm卡顿，安装失败
-解决方法参见akarin大大的更换源。
-
-
-
- link：
-akarin大大的blog
+            <p>感觉别人写得很好了，不敢再献丑再写一遍，下面link里面附加了我搭博客时参考的资料，造福诸位。</p>
+<h1 id="trouble-shooting"><a href="#trouble-shooting" class="headerlink" title="trouble shooting"></a>trouble shooting</h1><ul>
+<li><p>安装npm卡顿，安装失败</p>
+<p>解决方法参见akarin大大的更换源。</p>
+</li>
+</ul>
+<hr>
+<p><strong> link：</strong></p>
+<p><a href="http://akarin.xyz/build-your-hexo-blog/" target="_blank" rel="external">akarin大大的blog</a></p>
 
           
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2015/09/07/如何搭建我的Hexo静态博客（Mac平台）/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
@@ -1498,6 +1870,8 @@ akarin大大的blog
 
   
   
+  
+
   
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -1509,7 +1883,7 @@ akarin大大的blog
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xiaode">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="天堂有路你不走，学海无涯苦作舟">
       <meta itemprop="image" content="/uploads/avatar.jpeg">
     </span>
 
@@ -1524,25 +1898,52 @@ akarin大大的blog
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2015/09/07/设计模式（一）/" itemprop="url">设计模式（一）</a></h1>
+                <a class="post-title-link" href="/2015/09/07/设计模式（一）/" itemprop="url">
+                  设计模式（一）
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-09-07T19:00:48-07:00">
-                2015-09-07
-              </time>
+
+              
+                
+              
+
+              <time title="Created: 2015-09-07 19:00:48" itemprop="dateCreated datePublished" datetime="2015-09-07T19:00:48-07:00">2015-09-07</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2016-10-17 07:39:21" itemprop="dateModified" datetime="2016-10-17T07:39:21-07:00">2016-10-17</time>
+              
             
           </span>
 
@@ -1555,14 +1956,10 @@ akarin大大的blog
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/技术/" itemprop="url" rel="index">
-                    <span itemprop="name">技术</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/技术/" itemprop="url" rel="index"><span itemprop="name">技术</span></a></span>
 
                 
                 
@@ -1598,30 +1995,26 @@ akarin大大的blog
       
         
           
+            <blockquote>
+<p>仅以本系列文章作为学习设计模式驱动力之一</p>
+</blockquote>
+<hr>
+<p><strong> 更新日志 </strong></p>
+<p>2015/9/7 创建本文档<br>2016/10/17 重新审视这篇，头涔涔泪潸潸。。。</p>
+<hr>
+<p><strong> TODO </strong></p>
+<ul>
+<li>阅读《设计模式》</li>
+<li>本月底完成至少10种设计模式的分析和学习</li>
+</ul>
+
           
-仅以本系列文章作为学习设计模式驱动力之一
-
-
- 更新日志 
-2015/9/7 创建本文档2016/10/17 重新审视这篇，头涔涔泪潸潸。。。
-
- TODO 
-
-阅读《设计模式》
-本月底完成至少10种设计模式的分析和学习
-
-
-          
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2015/09/07/设计模式（一）/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
@@ -1660,6 +2053,8 @@ akarin大大的blog
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
@@ -1669,7 +2064,7 @@ akarin大大的blog
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xiaode">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="天堂有路你不走，学海无涯苦作舟">
       <meta itemprop="image" content="/uploads/avatar.jpeg">
     </span>
 
@@ -1684,25 +2079,52 @@ akarin大大的blog
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2015/09/06/Cocos2d-x填坑/" itemprop="url">Cocos2d-x填坑</a></h1>
+                <a class="post-title-link" href="/2015/09/06/Cocos2d-x填坑/" itemprop="url">
+                  Cocos2d-x填坑
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-09-06T23:46:44-07:00">
-                2015-09-06
-              </time>
+
+              
+                
+              
+
+              <time title="Created: 2015-09-06 23:46:44" itemprop="dateCreated datePublished" datetime="2015-09-06T23:46:44-07:00">2015-09-06</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2016-10-18 16:36:36" itemprop="dateModified" datetime="2016-10-18T16:36:36-07:00">2016-10-18</time>
+              
             
           </span>
 
@@ -1715,14 +2137,10 @@ akarin大大的blog
                 <i class="fa fa-folder-o"></i>
               </span>
               
-                <span class="post-meta-item-text">分类于</span>
+                <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/技术/" itemprop="url" rel="index">
-                    <span itemprop="name">技术</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/技术/" itemprop="url" rel="index"><span itemprop="name">技术</span></a></span>
 
                 
                 
@@ -1758,22 +2176,19 @@ akarin大大的blog
       
         
           
+            <p><img src="http://7xlkqd.com1.z0.glb.clouddn.com/image/jpg687474703a2f2f7777772e636f636f7332642d782e6f72672f6174746163686d656e74732f3830312f636f636f733264785f706f7274726169742e706e67.png" alt="Cocos2d-x"></p>
+<blockquote>
+<p>去年接触的Cocos2d-x引擎，大半年的时间，见证了中国手游最火的年代，以及由盛转衰。先挖一个坑，日后慢慢填。</p>
+</blockquote>
+<p>第一次接触Cocos2d-x还是13年的夏天，那时候是大二暑期的工程实训，跟队友一起做了一款很普通的塔防游戏，犹记得那时候的版本还是1.5.x，如今的迭代速度快得惊人，而且开发工具日趋完善。14年的下半年在一家游戏公司实习，恰好公司也是使用Cocos2d-x作为开发工具，顺手捡了起来，并且有机会好好研究引擎。奈何前人的智慧其实我等凡夫俗子轻易窥得，总结了一些心得，不敢说自己有多了解，多多讨论以求进步罢了。</p>
+<h1 id="Cocos2d-x环境配置"><a href="#Cocos2d-x环境配置" class="headerlink" title="Cocos2d-x环境配置"></a>Cocos2d-x环境配置</h1><h2 id="windows"><a href="#windows" class="headerlink" title="windows"></a>windows</h2><h2 id="Mac"><a href="#Mac" class="headerlink" title="Mac"></a>Mac</h2><h1 id="Cocos2d-x基本概念"><a href="#Cocos2d-x基本概念" class="headerlink" title="Cocos2d-x基本概念"></a>Cocos2d-x基本概念</h1>
           
-
-去年接触的Cocos2d-x引擎，大半年的时间，见证了中国手游最火的年代，以及由盛转衰。先挖一个坑，日后慢慢填。
-
-第一次接触Cocos2d-x还是13年的夏天，那时候是大二暑期的工程实训，跟队友一起做了一款很普通的塔防游戏，犹记得那时候的版本还是1.5.x，如今的迭代速度快得惊人，而且开发工具
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2015/09/06/Cocos2d-x填坑/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
@@ -1808,15 +2223,12 @@ akarin大大的blog
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
 
           </div>
-          
-
-
           
 
         </div>
@@ -1839,99 +2251,151 @@ akarin大大的blog
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/uploads/avatar.jpeg"
-               alt="xiaode" />
-          <p class="site-author-name" itemprop="name">xiaode</p>
-           
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.jpeg"
+                alt="xiaode" />
+            
+              <p class="site-author-name" itemprop="name">xiaode</p>
               <p class="site-description motion-element" itemprop="description">天堂有路你不走，学海无涯苦作舟</p>
-          
-        </div>
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
-            
-              <a href="/archives/">
-            
-                <span class="site-state-item-count">21</span>
-                <span class="site-state-item-name">日志</span>
-              </a>
-            </div>
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-categories">
-              <a href="/categories/index.html">
-                <span class="site-state-item-count">7</span>
-                <span class="site-state-item-name">分类</span>
-              </a>
-            </div>
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">18</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
           </div>
-        
 
-        <div class="links-of-author motion-element">
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">21</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-name">categories</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">18</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/LeonardLi" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="liyangde66@gmail.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="http://weibo.com/p/1005052197708580" target="_blank" title="Weibo"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+
           
             
-              <span class="links-of-author-item">
-                <a href="https://github.com/LeonardLi" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-github"></i>
-                  
-                    
-                      GitHub
-                    
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://weibo.com/p/1005052197708580" target="_blank" title="Weibo">
-                  
-                    <i class="fa fa-fw fa-weibo"></i>
-                  
-                    
-                      Weibo
-                    
-                </a>
-              </span>
-            
           
+          
+
         </div>
-
-        
-        
-
-        
-        
-
-        
-
-
       </section>
 
       
@@ -1948,21 +2412,35 @@ akarin大大的blog
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy; 
-  <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
-    <i class="fa fa-"></i>
+        <div class="copyright"> &copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">xiaode</span>
+
+  
 
   
 </div>
 
 
 
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> v3.3.8</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Mist</a> v6.5.0</div>
+
+
+
+
         
+
 
 
 
@@ -1981,6 +2459,11 @@ akarin大大的blog
       </div>
     
 
+    
+	
+    
+
+    
   </div>
 
   
@@ -1999,7 +2482,6 @@ akarin大大的blog
 
 
 
-  
 
 
 
@@ -2012,61 +2494,45 @@ akarin大大的blog
 
 
 
-  
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
 
 
 
   
   
-
-  
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
-
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
 
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
-
-
-
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
   
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/utils.js?v=6.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.5.0"></script>
 
 
-	
+
+  
+  
+
+  
+
+  
 
 
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.5.0"></script>
 
 
 
@@ -2074,9 +2540,9 @@ akarin大大的blog
 
 
 
-
-
   
+
+
 
 
 
@@ -2091,6 +2557,46 @@ akarin大大的blog
 
 
 
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+
+
+  
   
 
   
